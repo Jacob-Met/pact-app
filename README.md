@@ -4,6 +4,24 @@ Agreements that can explain their payments.
 
 PACT is a local workspace for freelance studios, small production teams and their clients. It turns a plain-language agreement into commitments that each point at the exact sentence they come from, and it only lets a payment exist once a named reviewer has accepted the delivered work. When someone later asks "why was this paid?", the answer is a trail: sentence, commitment, evidence, decision, payment.
 
+## Try the simulated demo
+
+No PayPal account and no local AI model are needed.
+
+```sh
+npm run demo        # or: node start-pact.mjs --demo
+# open http://127.0.0.1:4173
+```
+
+1. The sample agreement opens with commitment 01 **Blocked**. Choose **Add from agreement**, type "Which words say a preview approval does not count as accepting the final masters?" and choose **Find passage**. A canned answer highlights the exact sentence; choose **Use selected passage**, then **Keep my draft**.
+2. On the **Commitments** tab choose **Add evidence**, write a short description and a reference, attach any small file, and choose **Add unreviewed evidence**.
+3. In **Review delivery**, select the same file under "Check file", write a reason, choose **Review acceptance**, tick the box and record it.
+4. Open **Payments**, choose the commitment, tick the review box and choose **Create payment request**, then the approve link.
+5. On the page that says "Simulated PayPal approval", press **Approve**. You return to PACT.
+6. Open **Payments** again, choose the commitment, **View saved payment request**, **Refresh payment status**, then **Capture**.
+
+A yellow badge reads "Simulated demo: no real PayPal call". PayPal (OAuth, create order, show order, capture) and the AI passage lookup are answered by small in-process fakes in `demo-mode.mjs`; demo payment records are kept in memory only. The real PayPal Sandbox and model setup is described below.
+
 ## What it does
 
 - **Cite the source.** Select words in the agreement and record a commitment against them, with an amount, a performer, a reviewer and a completion criterion.

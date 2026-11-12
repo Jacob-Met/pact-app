@@ -37,7 +37,9 @@ export function sourceAnswerabilityRequest(request, { proposedClauses, totalUnit
   ] };
 }
 
-export function createPactProviders({ env = process.env, http = fetch, paypalApi = DEFAULT_SANDBOX_API, journal = null, modelLookupJournal = null } = {}) {
+export function createPactProviders({ env = process.env, http = fetch, paypalApi = DEFAULT_SANDBOX_API, journal = null, modelLookupJournal = null,
+  // Simulated demo only: the approval page is served by the app, not PayPal.
+  trustApproval = url => url.protocol === "https:" && url.hostname === "www.sandbox.paypal.com" } = {}) {
   const aiTransport = env.PACT_AI_TRANSPORT ?? "openai-compatible";
   const pairedModel = aiTransport === "paired-model-turns";
   const pairedTransport = createPairedSourceModel({env,http,journal:modelLookupJournal});
@@ -235,7 +237,7 @@ export function createPactProviders({ env = process.env, http = fetch, paypalApi
       const link = data.links?.find(item => item.rel === "approve" || item.rel === "payer-action");
       try {
         const url = new URL(link?.href);
-        if (url.protocol === "https:" && url.hostname === "www.sandbox.paypal.com") rec.approvalUrl = url.href;
+        if (trustApproval(url)) rec.approvalUrl = url.href;
       } catch {}
       rec.orderId = data.id;
       rec.state = "awaiting-payer";

@@ -157,11 +157,12 @@ function publicSourceReviewSelection(cause, input) {
   } catch { return null; }
 }
 
-export function createPactServer({ providers = createPactProviders(), shared = null } = {}) {
+export function createPactServer({ providers = createPactProviders(), shared = null, demo = null } = {}) {
   return createServer(async (request, response) => {
     if (shared && await shared.handleOwner(request, response)) return;
     let pathname;
     try { pathname = new URL(request.url, "http://localhost").pathname; } catch { response.writeHead(400); response.end(); return; }
+    if (demo && await demo.handle(request, response, pathname)) return;
     if (pathname === "/api/config") {
       if (request.method !== "GET") { json(response, 405, { code: "METHOD_NOT_ALLOWED" }); return; }
       json(response, 200, providers.config()); return;
@@ -206,7 +207,8 @@ export function createPactServer({ providers = createPactProviders(), shared = n
     const asset = assets.get(pathname);
     if (!asset) { response.writeHead(404, { "content-type": "text/plain; charset=utf-8", "x-content-type-options": "nosniff" }); response.end("Not found\n"); return; }
     try {
-      const body = await readFile(join(root, asset[0]));
+      let body = await readFile(join(root, asset[0]));
+      if (demo && asset[1].startsWith("text/html")) body = demo.decorateHtml(body);
       sendStaticAsset(request,response,{path:pathname,type:asset[1],body,policy:"default-src 'self'; img-src 'self' blob:; media-src blob:; object-src 'none'; base-uri 'none'; form-action 'self'"});
     } catch {
       response.writeHead(500, { "content-type": "text/plain; charset=utf-8" }); response.end("Local asset unavailable\n");

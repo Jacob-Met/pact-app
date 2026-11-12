@@ -6,6 +6,7 @@
   "description": "Trace source-linked agreement commitments, evidence and disputes into an explicit Sandbox payment review.",
   "scripts": {
     "start": "node start-pact.mjs",
+    "demo": "node start-pact.mjs --demo",
     "test": "node --test tests/*.test.mjs",
     "smoke": "node --test tests/server.test.mjs",
     "verify": "node --check app/obligation-network.mjs && node --check app/core.mjs && node --check app/ui-utils.mjs && node --check app/tab-recovery.mjs && node --check app/recovery-ui.mjs && node --check app/decision-review.mjs && node --check app/decision-review-ui.mjs && node --check app/amendment-ui.mjs && node --check app/app.mjs && node --check app/payment-ui.mjs && node --check providers.mjs && node --check order-journal.mjs && node --check server.mjs && node --test tests/*.test.mjs"

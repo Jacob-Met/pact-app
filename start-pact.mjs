@@ -19,7 +19,9 @@ const { createSharedReviewCoordinator } = await import("./shared-review-server.m
 const reviewPort=Number(process.env.PACT_REVIEW_PORT||4174);
 if(!Number.isInteger(reviewPort)||reviewPort<1||reviewPort>65535||reviewPort===port)throw Error("PACT_REVIEW_PORT must be a distinct valid port.");
 const shared = await createSharedReviewCoordinator({organizerCode:process.env.PACT_ORGANIZER_CODE||null,organizerPort:port,externalOrigin:process.env.PACT_REVIEW_ORIGIN||null,preferredPort:reviewPort,path:process.env.PACT_SHARED_JOURNAL || fileURLToPath(new URL(".pact-local/shared-agreements.json",import.meta.url))});
-const server = createPactServer({ shared, providers: createPactProviders({
+const demoMode = process.argv.includes("--demo") || process.env.PACT_DEMO === "1";
+const simulated = demoMode ? (await import("./demo-mode.mjs")).demoSetup({ port }) : null;
+const server = createPactServer({ shared, demo: simulated?.demo, providers: createPactProviders(simulated ? simulated.providerOptions : {
   journal: createOrderJournal(journalPath)
 }) });
 server.once("close", () => { void shared.shutdown(); });
