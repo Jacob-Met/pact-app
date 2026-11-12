@@ -1,0 +1,43 @@
+[
+  {
+    "id": "funding_authority",
+    "source_url": "https://www.acquisition.gov/far/52.232-22",
+    "primary_html_sha256": "505feaf6905133b7c91c71f15bbd653394010b15e9b407d63e55e846570e29b5",
+    "paragraph_range_zero_based_half_open": [
+      9,
+      16
+    ],
+    "source": "(f) Except as required by other provisions of this contract, specifically citing and stated to be an exception to this clause-\n(1) The Government is not obligated to reimburse the Contractor for costs incurred in excess of the total amount allotted by the Government to this contract; and\n(2) The Contractor is not obligated to continue performance under this contract (including actions under the Termination clause of this contract) or otherwise incur costs in excess of-\n(i) The amount then allotted to the contract by the Government or;\n(ii) If this is a cost-sharing contract, the amount then allotted by the Government to the contract plus the Contractor’s corresponding share, until the Contracting Officer notifies the Contractor in writing that the amount allotted by the Government has been increased and specifies an increased amount, which shall then constitute the total amount allotted by the Government to this contract.\n(g) The estimated cost shall be increased to the extent that (1) the amount allotted by the Government or, (2)if this is a cost-sharing contract, the amount then allotted by the Government to the contract plus the Contractor’s corresponding share, exceeds the estimated cost specified in the Schedule. If this is a cost-sharing contract, the increase shall be allocated in accordance with the formula specified in the Schedule.\n(h) No notice, communication, or representation in any form other than that specified in paragraph (f)(2) of this clause, or from any person other than the Contracting Officer, shall affect the amount allotted by the Government to this contract. In the absence of the specified notice, the Government is not obligated to reimburse the Contractor for any costs in excess of the total amount allotted by the Government to this contract, whether incurred during the course of the contract or as a result of termination.",
+    "source_sha256": "22dc1d3fc04661afc8ae1aba4fde7d939982ebd8e5745a2e99898d2aa106602e",
+    "objective": "What notice can increase the allotted amount, and can a communication from someone other than the Contracting Officer do so?",
+    "required_scope": [
+      "The Contracting Officer must notify the Contractor in writing that the allotment has increased and specify the increased amount.",
+      "Other forms of notice or communication, and communications from other persons, do not affect the allotment."
+    ],
+    "kind": "cross_reference"
+  },
+  {
+    "id": "additional_penalty",
+    "source_url": "https://www.acquisition.gov/far/52.232-25",
+    "primary_html_sha256": "3f58fa85bfd392a8f93d8a8b826b777302682f4378faa6210f5122697fee0407",
+    "paragraph_range_zero_based_half_open": [
+      43,
+      58
+    ],
+    "source": "(7) Additional interest penalty.\n(i) The designated payment office will pay a penalty amount, calculated in accordance with the prompt payment regulations at 5 CFR Part 1315 in addition to the interest penalty amount only if-\n(A) The Government owes an interest penalty of $1 or more;\n(B) The designated payment office does not pay the interest penalty within 10 days after the date the invoice amount is paid; and\n(C) The Contractor makes a written demand to the designated payment office for additional penalty payment, in accordance with paragraph (a)(7)(ii) of this clause, postmarked not later than 40 days after the invoice amount is paid.\n(ii)\n(A) The Contractor shall support written demands for additional penalty payments with the following data. The Government will not request any additional data. The Contractor shall-\n(1) Specifically assert that late payment interest is due under a specific invoice, and request payment of all overdue late payment interest penalty and such additional penalty as may be required;\n(2) Attach a copy of the invoice on which the unpaid late payment interest is due; and\n(3) State that payment of the principal has been received, including the date of receipt.\n(B) If there is no postmark or the postmark is illegible-\n(1) The designated payment office that receives the demand will annotate it with the date of receipt, provided the demand is received on or before the 40th day after payment was made; or\n(2) If the designated payment office fails to make the required annotation, the Government will determine the demand’s validity based on the date the Contractor has placed on the demand, provided such date is no later than the 40th day after payment was made.\n(iii) The additional penalty does not apply to payments regulated by other Government regulations (e.g., payments under utility contracts subject to tariffs and regulation).",
+    "source_sha256": "637e5aa77e47adeb745fe3b8e5ba1f5eba678d573d364026e51ba5e8bd5fc7b8",
+    "objective": "What conditions make the additional penalty payable, and what payment category is excluded?",
+    "required_scope": [
+      "An interest penalty of at least one dollar is owed.",
+      "It remains unpaid ten days after invoice payment.",
+      "A written demand is postmarked within forty days after invoice payment.",
+      "Payments regulated by other Government regulations, such as tariff-regulated utilities, are excluded."
+    ],
+    "kind": "multi"
+  },
+  {
+    "id": "studio-delivery-conditions",
+    "objective": "Find the promised exhibition poster files and every approval and dispute condition before payment is due.",
+    "source": "Zoë Studio delivers the 🦊 exhibition poster for Lantern Museum as a layered source file, a print-ready PDF, and a matching preview image; the source file must retain editable headings, the approved illustration, licensed font references, and the colour profile used for the proof; the print file must use the agreed page dimensions and bleed, embed the permitted fonts, and show the same dates, venue, sponsor names, accessibility information, and booking address as the client's approved copy.\r\n\r\nThe client pays USD 45.50 only after its named reviewer has opened every supplied file and given written approval of the complete set; approval must identify the delivered versions and confirm that the proof is readable at the intended print size, that the preview matches the print file, that no required illustration or line of approved copy is missing, and that the editable source can be opened using the agreed software; an acknowledgement that a link arrived, a reaction to an early sketch, or use of a preview in an internal meeting does not satisfy this approval condition.\r\nNo payment is due while a delivery dispute remains open; the reviewer must identify the affected file and the unmet agreed requirement so the studio can supply a correction, and acceptance of a corrected preview alone does not close a dispute about the layered source or print file; the client must confirm the replacement versions in writing after inspecting them; changes to the approved wording, a new illustration, an additional language, a different print format, or an earlier deadline require a separately reviewed amendment and are not included in the original fee.\rThe studio archives the source files."
+  }
+]

@@ -1,0 +1,22 @@
+.organizer-entry{max-width:32rem;margin:clamp(3rem,12vh,8rem) auto;padding:0 1.5rem}.entry-rule{height:5px;width:3rem;background:var(--accent,#155d46);margin-bottom:1.5rem}.organizer-entry h2{font-family:Georgia,serif;font-size:2rem;line-height:1.15;margin:0 0 2rem}.organizer-entry form{display:grid;gap:.7rem}.organizer-entry input{width:100%;min-height:46px}.organizer-entry button{justify-self:start;margin-top:.5rem;min-height:44px}.entry-invitation{border-top:1px solid #bfc9c6;padding-top:1.25rem;margin-top:2rem;color:#425c6b}#organizer-message{min-height:1.5em}.organizer-entry [aria-invalid=true]{border-color:#a72828}
+
+.organizer-entry {max-width:36rem;padding:0 24px;}
+.entry-rule {height:2px;width:100%;background:#b3261e;margin-bottom:28px;}
+.organizer-entry h2 {font:600 34px/1.2 "Source Serif 4",Georgia,serif;margin-bottom:30px;}
+.organizer-entry form {gap:10px;}
+.organizer-entry label {font-size:13px;}
+.organizer-entry input {border-color:#aaa;min-height:48px;}
+.organizer-entry button.primary {border-color:#b3261e;background:#b3261e;border-radius:2px;padding:12px 20px;}
+.entry-invitation {font-size:13px;border-color:#dedbd8;color:#686868;}
+@media(max-width:500px) {.organizer-entry {margin-top:52px;padding:0 24px;}.organizer-entry h2 {font-size:30px;}}
+
+.organizer-entry [hidden] {display:none!important;}
+.organizer-entry form {display:grid;gap:10px;}
+.organizer-entry input {width:100%;min-width:0;}
+.organizer-entry details {margin-top:22px;border-top:1px solid #d8d3cc;padding-top:14px;}
+.organizer-entry summary {font-size:14px;cursor:pointer;}
+.organizer-entry details form {margin-top:16px;}
+.organizer-entry .entry-help {margin:0 0 8px;font-size:13px;color:#5e6468;}
+.organizer-entry .entry-link {border:0;background:none;text-align:left;padding:6px 0;color:#b3261e;text-decoration:underline;}
+.organizer-entry #recovery-value {display:block;overflow-wrap:anywhere;user-select:all;border-block:1px solid #b3261e;padding:18px 0;margin:20px 0;font-size:17px;}
+.organizer-entry .actions {flex-wrap:wrap;}

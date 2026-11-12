@@ -1,0 +1,443 @@
+ Ashfield District Council
+Standard Terms and Conditions of Contract for Services
+Contents
+Clause	Heading
+Part A - Operative Provisions
+A1.	Definitions
+A2	Headings
+A3	Notices
+A4	Entire agreement
+Part B - Provision of Services
+B1	Contract Period
+B2	Performance
+B3	Contract Manager
+B4	Ordering process
+B5	Risk in and title to goods
+B6	Warranty
+B7	Contractor’s Employees
+Part C - Price and payment
+C1	Price and payment
+Part D - Termination and consequences of termination
+D1	Termination
+D2	 Consequences of termination
+D3	Dispute resolution procedure
+D4	Survival
+Part E - Insurance and Liabilities
+E1	Insurance
+E2	Indemnity and liability
+Part F - protection of information
+F1	Intellectual property
+F2.  	Data Protection Act
+F3	Freedom of Information
+F4	Confidentiality
+F5	Record keeping and monitoring
+Part G - Statutory obligations
+G1	Health and safety
+G2	Corporate requirements
+G3	Law and Change in Law
+G4	TUPE and re-tendering
+Part H - General provisions
+H1	Contract variation
+H2	Third party rights
+H3	No waiver
+H4	Severance
+H5	Assignment, sub-contracting and responsibility
+H6	Force Majeure
+H7	Inducements
+H8	Costs and expenses
+H9	No agency or partnership
+H10	Non solicitation and offers of employment
+H11	Inspection of Contractor’s premises
+H12	Law and jurisdiction
+H13	  EXIT MANAGEMENT
+Appendix 1 – Breach Management Form						  
+Part A - operative provisions	
+A1	Definitions	
+The terms and expressions used in these Standard Terms and Conditions shall have the meanings set out below:
+
+| ‘Assigned Employees’                                                                                        | in respect of clause G4, an individual employed by the Contractor wholly or mainly in the performance of the Services                                                                                                                                            | 
+|                                                                                                             |                                                                                                                                                                                                                                                                  | 
+| ‘Authorised Officer’                                                                                        | the person duly appointed by the Council and notified in writing to the Contractor to act as the representative of the Council for the purpose of the Contract in the Contract Particulars or as amended from time-to-time and in default of such notification the Council’s Strategic Procurement Lead Officer or similar responsible officer. | 
+| ‘Business Day’                                                                                              | any day other than a Saturday or Sunday or a public or bank holiday in England.                                                                                                                                                                                  | 
+| ‘Change in Law’                                                                                             | the coming into effect or repeal (without re-enactment or consolidation) in England of any law, or any amendment or variation to any law, or any judgement of a relevant court of law which changes binding precedent in England in each case after the date of this Contract. | 
+| ‘Commencement Date’                                                                                         | the commencement date stated in the Contract Particulars.                                                                                                                                                                                                        | 
+| ‘Commercially Sensitive Information’                                                                        | the information used in the Contract Particulars comprising the information of a commercially sensitive nature relating to the Contractor, its Intellectual Property Rights or its business or which the Contractor has indicated to the Council that, if disclosed by the Council, would cause the Contractor significant commercial disadvantage or material financial loss. | 
+| ’Confidential Information’                                                                                  | any information which has been designated as confidential by either party in writing or that ought to be considered as confidential (however it is conveyed or on whatever media it is stored).  This includes information which relates to the Services, the business, affairs, properties, assets, trading practices, developments, trade secrets, Intellectual Property Rights, know-how, personnel, customers and suppliers of either party, all personal data and sensitive personal data (within the meaning of the DPA). | 
+| ‘Contract’                                                                                                  | the agreement in respect of the provision of the Services consisting of the following listed documents which shall be read as one document.  In the event of ambiguity, conflict or contradictions between these documents the conflict will be resolved according to the following order of priority. 1. The Contract Particulars. 2. The Special Terms and Conditions. 3. The Standard Terms and Conditions. 4. The Tender except to the extent that any element of the Tender has been included in the Contract Particulars. | 
+| ’Contract Manager’                                                                                          | the person named in the Contract Particulars as the Contract Manager and any replacement from time-to-time in accordance with clause B3.2.                                                                                                                       | 
+| ‘Contract Particulars’                                                                                      | the document detailing the specific core terms agreed between the parties with regard to the Services which shall include but not be limited to the Pricing Schedule, delivery instructions, Commencement Date, authorised officer, Contract Manager, Key Personnel, Commercially Sensitive Information, Contract Period, and the Specification and relevant Contract specific details of the Tender included in the document. | 
+| ‘Contract Period’                                                                                           | the period of the Contract as stated in the Contract Particulars (and any extension in accordance with clause B1).                                                                                                                                               | 
+| ’Contractor’                                                                                                | the contractor and where applicable this shall include the Contractor's employees, sub-contractors, agents, representatives, and permitted assigns and, if the Contractor is a consortium or consortium leader, the consortium members.                          | 
+| Contractor Personnel                                                                                        | means all directors, officers, employees, agents, consultants and contractors of the Contractor and/or of any Sub-Contractor engaged in the performance of its obligations under this Agreement                                                                  | 
+| ‘Control’ Controller, Processor, Data Subject, Personal Data, Personal Data Breach, Data Protection Officer | control as defined by section 416 of the Income and Corporation Taxes Act 1988. take the meaning given in the Data Protection Legislation                                                                                                                        | 
+| ‘Council’                                                                                                   | the Council named in the Contract Particulars and where the context so admits includes any person which takes over or assumes the statutory functions or administrative responsibilities of the Council (whether in part or totally) or which is controlled by or is under common control with the Council (and the expression ‘control’ shall mean the power to direct or cause the direction of the general management and policies of the person in question but only for so long as such control exists). | 
+| Data Loss Event                                                                                             | any event that results, or may result, in unauthorised access to Personal Data held by the Contractor under this Agreement, and/or actual or potential loss and/or destruction of Personal Data in breach of this Agreement, including any Personal Data Breach  | 
+| Data Protection Impact Assessment                                                                           | an assessment by the Controller of the impact of the envisaged processing on the protection of Personal Data                                                                                                                                                     | 
+| Data Protection Legislation                                                                                 | (i) all applicable data protection and privacy legislation in force from time to time in the UK including the UK GDPR;  (ii) the DPA 2018 to the extent that it relates to processing of personal data and privacy.                                              | 
+| Data Subject Access Request ‘Delivery Instructions’ ‘DPA’                                                   | a request made by, or on behalf of, a Data Subject in accordance with rights granted pursuant to the Data Protection Legislation to access their Personal Data the instructions provided in the Contract Particulars and any other information that the Council considers appropriate to the provision of the Services. The Data Protection Act 2018 | 
+| ‘EIR’                                                                                                       | The Environmental Information Regulations 2004.                                                                                                                                                                                                                  | 
+| ‘Employee’ .                                                                                                | any person employed by the Contractor to perform the Contract which will also include the Contractor's servants, agents, voluntary and unpaid workers and subcontractors and representatives or, in respect of clause G4 (TUPE and re-tendering) and any other TUPE obligation, an individual employed by the Contractor in the performance of the Services. | 
+| ‘FOIA’                                                                                                      | The Freedom of Information Act 2000.                                                                                                                                                                                                                             | 
+| ‘Force Majeure’                                                                                             | any cause materially affecting the performance by a party of its obligations under this Contract arising from any act beyond its reasonable control and affecting either party.  This includes without limitation: acts of God, war, industrial action (subject to clause H6.3), protests, fire, flood, storm, tempest, epidemic, pandemic, explosion, acts of terrorism and national emergencies. | 
+|                                                                                                             |                                                                                                                                                                                                                                                                  | 
+| UK GDPR                                                                                                     | the General Data Protection Regulation (Regulation (EU) 2016/679)                                                                                                                                                                                                | 
+| ‘Good Industry Practice’                                                                                    | the exercise of such degree of skill, diligence, care and foresight which would reasonably and ordinarily be expected from a skilled and experienced Contractor engaged in the supply of Services similar to the Services under the same or similar circumstances as those applicable to the Contract. | 
+| ‘HRA’                                                                                                       | The Human Rights Act 1998.                                                                                                                                                                                                                                       | 
+| ‘Information’                                                                                               | has the meaning given under section 84 of the Freedom of Information Act 2000.                                                                                                                                                                                   | 
+| ‘Intellectual Property Rights’                                                                              | patents, inventions, trademarks, service  marks, logos, design rights (whether registrable or otherwise), applications for any of the foregoing, copyright, database rights, domain names, trade or business names, moral rights and other similar rights or obligations whether registrable or not in any country (including but not limited to the United Kingdom) and the right to sue for passing off. | 
+| ‘Invitation to Tender’                                                                                      | the Council’s Invitation to Tender for the Contract.                                                                                                                                                                                                             | 
+| ‘Key Personnel’                                                                                             | those persons named in the Contract Particulars as being key personnel and any replacement from time-to-time under clause B6.1.5.                                                                                                                                | 
+| ‘Law’                                                                                                       | any applicable Act of Parliament, sub-ordinate legislation within the meaning of section 21(1) of the Interpretation Act 1978, exercise of the Royal Prerogative, enforceable community right within the meaning of section 2 of the European Communities Act 1972, bye-law, regulatory policy, guidance or industry code, judgment of a relevant court of law, or directives or requirements of any regulatory body of which the Contractor is bound to comply. | 
+| ‘Liabilities’                                                                                               | all costs, actions, demands, expenses, losses, damages, claims, proceedings, awards, fines, orders and other liabilities (including reasonable legal and other professional fees and expenses) whenever arising or brought.                                      | 
+| ’Order’ Party                                                                                               | an order for Services to be provided where the Contract is identified in the Contract Particulars to be delivered by call off. A Party to this Contract                                                                                                          | 
+| Price                                                                                                       | the price of the Services as set out in the Contract Particulars.  Unless otherwise stated, any reference to price shall be regarded as being exclusive of properly chargeable VAT which shall be separately accounted for.                                      | 
+| ’Pricing Schedule                                                                                           | the schedule from the Tender detailing the pricing as detailed in the Contract Particulars.                                                                                                                                                                      | 
+| Protective Measures ’Replacement Contractor’                                                                | appropriate technical and organisational measures which may include: pseudonymising and encrypting Personal Data, ensuring confidentiality, integrity, availability and resilience of systems and services, ensuring that availability of and access to Personal Data can be restored in a timely manner after an incident, and regularly assessing and evaluating the effectiveness of the such measures adopted by it any company, organisation or person who replaces the Contractor following termination or expiry of all or part of this Contract | 
+| ‘Request for Information                                                                                    | a request for information or an apparent request under the Code of Practice on Access to Government Information, FOIA or the EIR.                                                                                                                                | 
+| ‘Services’                                                                                                  | the services described in the Specification to be supplied by the Contractor in accordance with the Contract, together with all equipment required and any associated goods provided by the Contractor in relation to those services.                            | 
+| ’Special Terms and Conditions’                                                                              | the additional terms and conditions attached which were set out in the Invitation to Tender.                                                                                                                                                                     | 
+| ‘Specification’                                                                                             | the specification included in the Contract Particulars setting out the Council's detailed requirements in relation to the Services.                                                                                                                              | 
+| ‘Standard Terms and Conditions”                                                                             | the terms and conditions set out in this document.                                                                                                                                                                                                               | 
+| Sub-processor Tender                                                                                        | any third Party appointed to process Personal Data on behalf of the Contractor related to this Agreement the Contractor’s tender for the Services in response to the Council’s Invitation to Tender.                                                             | 
+| TUPE                                                                                                        | The Transfer of Undertakings (Protection of Employment) Regulations 2006.                                                                                                                                                                                        | 
+
+A1.1	Any reference to a person shall include any natural person, partnership, joint 	venture, body corporate, incorporated association, government, government 	agency, persons having a joint or common interest, or any other legal or 	commercial entity or undertakings.
+A1.2	A reference to any statute, order, regulation or similar instrument shall be 	construed as a reference to the statute, order, regulation or instrument as 	amended by any subsequent statute, order, regulation or instrument or as 	contained in any subsequent re-enactment.
+A2	Headings	
+A2.1	The index and headings to the clauses and appendices to and schedules of 	this Contract are for convenience only and will not affect its construction or 	interpretation.
+A3	Notices	
+A3.1	Any notice required by this Contract to be given by either party to the other shall be in writing and shall be served personally, or by sending it by registered post or recorded delivery to the appropriate address or email address notified to each other as set out in the Contract Particulars.
+A3.2	Any notice serviced will be deemed to have been served as follows: 
+	A3.2.1		Any notice served personally will be deemed to have been 				served on the day of delivery;
+	A3.2.2		Any notice sent by post will be deemed to have been served 48 			hours after it was posted;
+	A3.2.3		Any notice sent by email before 5 p.m. will be deemed to have 			been served on the day of despatch and otherwise on the 				following day save where the deemed date of service falls on a 			day other than a Business Day in which case the date of service 			will be the following Business Day.
+A4	Entire agreement	
+A4.1	The Contract constitutes the entire agreement between the parties relating to 	the subject matter of the Contract. The Contract supersedes all prior 	negotiations, representations and undertakings, whether written or oral, except 	that this clause A4 shall not exclude liability in respect of any fraudulent 	misrepresentation.
+Part b - Provision of Services
+B1	Contract Period	
+B1.1	The Contract shall commence on the Commencement Date and subject to 	clause B1.2 shall continue for the Contract Period.
+B1.2	If the Contract Period includes an option to extend and the Council intends to 	take up the option, the Contractor shall be notified in writing within the period 	stated in the Contract Particulars prior to the commencement of the extension.  	If no such notification is issued the Contract shall automatically expire after the 	initial Contract Period.
+B2	Performance	
+B2.1	The Services shall be provided in accordance with any delivery instructions. If 	no time for delivery is stated in the delivery instructions the Services shall be 	delivered between 9am and 5pm on a Business Day.
+B2.2	The time of the delivery of the Services is of essence to the Contract.
+B2.3	The Council will have the right to observe the Contractor’s performance of the 	Services if the Services are not being performed on the Council’s premises.
+B2.4	If the Contractor at any time becomes aware of any act or omission, or 	proposed act or omission by the Council which prevents or hinders, or may 	prevent or hinder the Contractor from performing the Services in accordance 	with the Contract; the Contractor shall inform the Council and the Council may, 	at its absolute discretion, extend the period of the Contract accordingly. 
+B2.5	If the Contractor at any time becomes aware of any material matter that could 	affect the performance of the Services in accordance with the Contract, the 	Contractor shall inform the Council immediately.  
+B2.6	If the Contractor has a change in Control, the Contractor shall inform the 	Council as soon as reasonably practicable.
+B2.7	The Council retains the Contractor for the performance of the Services on a 	non-exclusive basis.
+B3	Contract Manager	
+B3.1	The Contractor shall employ a competent and authorised Contract Manager 	empowered to act on behalf of the Contractor for all purposes connected with 	the Contract.
+B3.2	The Contractor shall give notice in writing to the Council at once of any 	change in the identity, address and telephone numbers of the person 	appointed as Contract Manager.  The Contractor shall give maximum possible 	notice to the Council before changing its Contract Manager.
+B4	Ordering process	
+B4.1	Where this Contract is identified as requiring Orders in the Contract Particulars 	the Contractor shall accept Orders made in writing by the Council under the 	provisions of this clause.
+B4.2	Except where specified Orders are required to call off the Services the Council 	gives no guarantees whatsoever as to when any Order will be placed during 	the Contract Period or under the Contract. 
+B4.3	The Orders shall state the type of or part of the Services required including the 	Council’s requirements with regard to timescale for delivery of those Services. 
+B5	Risk in and title to goods 	
+B5.1	Risk in any goods provided as part of the Services shall pass to the Council 	upon delivery without prejudice to any rights of rejection which may accrue to 	the Council under the Contract or otherwise.
+B5.2	Title in any goods provided as part of the Services shall pass to the Council 	upon delivery or earlier payment.
+B6	Warranty	
+B6.1	The Contractor warrants to the Council that the Services will be provided as 	follows:
+B6.1.1	in a proper, skilful and workmanlike manner;
+B6.1.2	by a sufficient number of appropriately qualified, trained and 			experienced personnel with a high standard of skill, care and 		due diligence and in accordance with Good Industry Practice;
+B6.1.3	in accordance with the Contract and any descriptions provided 		by the Contractor;
+B6.1.4	to the reasonable satisfaction of the Authorised Officer;
+B6.1.5	by Key Personnel (if any) who shall not be released from 			providing the Services permanently without the written 			agreement of the Council, except by reason of:
+		B6.1.5.1	sickness;
+		B6.1.5.2	maternity leave;
+		B6.1.5.3	paternity leave;
+		B6.1.5.4	termination of employment;
+		B6.1.5.5	request by the Council;
+		B6.1.5.6	the element of the Services in respect of which the 				individual was engaged has been completed to the 				Council’s satisfaction; or
+		B6.1.5.7	other extenuating circumstances explained to the 				Council; and 
+B6.1.6	any replacements for the Key Personnel shall be subject to the agreement of the Council and such replacements shall be of at least equal status or of equivalent experience and skills to the Key Personnel being replaced and be suitable for the	responsibilities of that person in relation to the Services.  The cost of effecting such replacement shall be borne by the Contractor; and
+B6.1.7	in a way that the Contractor takes every reasonable precaution 		to safeguard the Council’s property entrusted to the care of the 		Contractor.   
+B6.2	The Contractor warrants to the Council that to the extent that any goods, 	equipment or consumables are provided as part of the Services they will:
+B6.2.1	be free from defects in design, material and workmanship; and
+B6.2.2	be so formulated, designed, constructed, finished and packaged 		as to be safe and without risk to health.
+B6.3	Without prejudice to the Council’s rights to terminate under clause D1 		(Termination), if any of the Services supplied are not in accordance with the 	Contract, the Council shall be entitled to:
+B6.3.1	require the Contractor to provide replacement Services in 			accordance with the Contract as soon as reasonably practicable 		and in any event within 14 days of a request to do so; or
+B6.3.2	subject to clause E2 (Indemnity and liability) require repayment 		of the proportion of the Price which has been paid in respect of 		such Services together with payment of any additional 			expenditure over and above the Price reasonably incurred by the 		Council in obtaining replacement Services.
+B7	Contractor’s Employees	
+B7.1	The Council reserves the right under the Contract to refuse to admit to, or to 	withdraw permission to remain on, any premises occupied by or on behalf of 	the Council:
+B7.1.1	any member of the Contractor’s Employees; and/or
+B7.1.2	any person employed or engaged by a sub-contractor, agent or 		servant of the Contractor, 
+whose admission or continued presence would be, in the reasonable opinion of the Council, undesirable.
+B7.2	When directed by the Council, the Contractor shall provide a list of the names 	and addresses of all persons (if any) who it is expected may require admission 	in connection with the Contract to any premises occupied by or on behalf of 	the Council, specifying the capacities in which they are concerned with the 	Contract and giving such other particulars as the Council may reasonably 	desire.
+B7.3	The Contractor’s Employees, engaged within the boundaries of any of the 	Council’s premises, shall comply with such rules, regulations and 	requirements (including those relating to security arrangements) as may be in 	force from time-to-time for the conduct of personnel when at that 	establishment and when outside that establishment.
+B7.4	The decision of the Council as to whether any person is to be refused access 	to any premises occupied by or on behalf of the Council shall be final and 	conclusive.
+B7.5	The Contractor shall replace any of the Contractor’s Employees who the 	Council reasonably decides have failed to carry out their duties with 	reasonable skill and care.  Following the removal of any of the Contractor’s 	Employees for any reason, the Contractor shall make sure such person is 	replaced promptly with another person with the necessary training and skills to 	meet the requirements of the Services.
+B7.6	The Contractor shall bear the cost of or costs arising from any notice, 	instruction or decision of the Council under this clause.
+Part C - Price and payment
+C1	Price and payment	
+C1.1	The Council shall pay the Price for the Services to the Contractor.
+C1.2	The Contractor shall submit a single VAT invoice to the Council no later than 	seven days after the end of each calendar month detailing the Services 	provided during the calendar month and the amount payable.
+C1.3	Payment of any undisputed invoice will be made no later than 30 days 	following the date of receipt of the invoice by the Council.
+C1.4	The Council reserves the right to withhold payment of the relevant part of the 	Price without payment of interest where the Contractor has either failed to 	provide the Services at all or has provided the Services inadequately and any 	invoice relating to such Services will not be paid unless or until the Services 	have been performed to the Council’s satisfaction.
+C1.5	Any overdue sums will bear interest from the due date until payment is made 	at 4% per annum over the Bank of England base rate from time-to-time.  The 	Contractor is not entitled to suspend provision of the Services as a result of 	any overdue sums.
+C1.6	The Council will be entitled but not obliged at any time or times without notice 	to the Contractor to set off any liability of the Council to the Contractor against 	any liability of the Contractor to the Council (in either case however arising 	and whether any such liability is present or future, liquidated or unliquidated 	and irrespective of the currency) and may for such purpose convert or 	exchange any sums owing to the Contractor into any other currency or 	currencies in which the obligations of the Council are payable under this 	Contract.  The Council’s rights under this clause will be without prejudice to 	any other rights or remedies available to the Council under this Contract or 	otherwise.
+C1.7	Further details of payment, if any, are set out in the Pricing Schedule.
+part d - termination and consequences of termination
+D1	Termination	
+D1.1	Subject to the provisions of clause H6 (Force majeure) the Council may 	terminate the Contract with immediate effect by notice in writing to the 	Contractor on or at any time if:
+D1.1.1	the Contractor becomes bankrupt, insolvent, makes any 			composition with its creditors, has a receiver appointed under the 		Mental Health Act 1983 or dies; 
+D1.1.2	the Contractor is convicted of a criminal offence; 
+D1.1.3	the Contractor ceases or threatens to cease to carry on its 			business; 
+D1.1.4	the Contractor has a change in Control which the Council 			believes will have a substantial impact on the performance of the 		Contract; 
+D1.1.5	there is a risk or a genuine belief that reputational damage to the 		Council will occur as a result of the Contract continuing; 
+D1.1.6	the Contractor is in breach of any of its obligations under this 		Contract that is capable of remedy and which has not been 			remedied to the satisfaction of the Council within 14 days, or 			such other reasonable period as may be specified by the Council 		after issue of a written notice specifying the breach and 			requesting it to be remedied; 
+D1.1.7	there is a material or substantial breach by the Contractor of any 		of its obligations under this Contract which is incapable of 			remedy; or
+D1.1.8	the Contractor commits persistent minor breaches of this 			Contract whether remedied or not.
+D1.2	The Council reserves the right to terminate the Contract in part in the case of 	termination under clauses D1.1.6, D1.1.7 and D1.1.8.
+D1.3	Where this Contract is subject to Orders as specified in the Contract 	Particulars the Council has the right to terminate any individual Order or 	Orders or the whole Contract under the provisions of this clause D1. 
+D1.4	The Council reserves the right to terminate the Contract at will, in whole or in 	part, at any time with or without notice except that it will give as much notice 	as possible in the circumstances.
+D2	Consequences of termination		
+D2.1	If this Contract is terminated in whole or in part the Council shall:
+D2.1.1	be liable to pay to the Contractor only such elements of the 			Price, if any, that have properly accrued in accordance with the 		Contract or the affected part of the Contract up to the time of the 		termination and/or;
+D2.1.2	except for termination under clause D1.4, be entitled to deduct 		from any sum or sums which would have been due from the 			Council to the Contractor under this Contract or any other 			Contract and to recover the same from the Contractor as a debt 		any sum in respect of any loss or damage to the Council 			resulting from or arising out of the termination of this Contract.  		Such loss or damage shall include the reasonable cost to the 		Council of the time spent by its officers in terminating the 			Contract and in making alternative arrangements for the supply 		of the Services or any parts of them and/or; 
+D2.1.3	Where termination arises under clause D1.4, pay to the Contractor any reasonable, direct and quantifiable costs reasonably incurred by the Contractor due to early termination which shall be limited to 100% of the proportion of the Price which is paid and payable at the time that the liability arises and/or;
+D2.1.4	in the event that any sum of money owed by the Contractor to 		the Council (the Contractor’s debt) exceeds any sum of money 		owed by the Council to the Contractor (the Council’s debt) under 		this Contract then the Council shall, at its sole discretion, be 			entitled to deduct the Contractor’s debt from any future Council’s 		debt or to recover the Contractor’s debt as a civil debt.
+D2.2	Upon the termination of the Contract for any reason, subject as otherwise 	provided in this Contract and to any rights or obligations which have accrued 	prior to termination, neither party shall have any further obligation to the other 	under the Contract.
+D3	Dispute resolution procedure	
+D3.1	If a dispute arises between the Council and the Contractor in connection with  	the Contract, the parties shall each use reasonable endeavours to resolve 	such dispute by means of prompt discussion at an appropriate managerial 	level.
+D3.2	If a dispute is not resolved within 14 days of referral under clause D3.1 then 	either party may refer it to the chief executive or appropriate nominated officer 	of each party for resolution who shall meet for discussion within 14 days or 	longer period as the parties may agree.
+D3.3	Provided that both parties consent, a dispute not resolved in accordance with 	clauses D3.1 and D3.2, shall next be referred at the request of either party to 	a mediator appointed by agreement between the parties.  This must be within 	14 days of one party requesting mediation with the costs of mediation 	determined by the mediator.
+D3.4	Nothing in this clause shall preclude either party from applying at any time to 	the English courts for such interim or conservatory measures as may be 	considered appropriate.
+D4	Survival	
+D4.1	The following clauses will survive termination or expiry of the Contract:
+	D4.1.1		clause B5 (Risk in and title to the goods);
+	D4.1.2		clause D2 (Consequences of termination);
+	D4.1.3		clause E2 (Indemnity and liability); 
+	D4.1.4		clause F1 (Intellectual property);
+D4.1.5		clause F2 (Data Protection)
+	D4.1.6		clause F3 (Freedom of Information);
+	D4.1.7		clause F4 (Confidentiality and Publicity);
+	D4.1.8		clause F5 (Record keeping and monitoring);
+	D4.1.9		clause G4 (TUPE and re-tendering);
+	D4.1.10	clause H4 (Severance);
+	D4.1.11	clause H10 (Non solicitation and offers of employment); and
+	D4.1.12	clause H12 (Law and jurisdiction). 
+	D4.1.13	clause H13 (Exit Management)
+part e - insurance and Liabilities
+E1	Insurance	
+E1.1	The Contractor shall maintain insurance necessary to cover any liability arising 	under the Contract as set out in the Contract Particulars.
+E1.2	The Contractor shall prior to the Commencement Date and on each 	anniversary of the Commencement Date and/or upon request provide 	evidence that all premiums relating to such insurances have been paid.
+E1.3	If the Contractor does not maintain the necessary insurances under the 	Contract the Council may insure against any risk in respect of the default and 	may charge the Contractor the cost of such insurance together with a 	reasonable administration charge.
+E2	Indemnity and liability	
+E2.1	Neither party seeks to exclude or limit its liability for:
+E2.1.1	death or personal injury caused by its negligence (but will not be 		liable for death or personal injury caused by the other party’s 		negligence);
+E2.1.2	fraudulent misrepresentation; or
+E2.1.3	any other matter in respect of which, as a matter of Law, liability 		cannot be excluded or limited.
+E2.2	The Contractor shall indemnify and keep indemnified the Council in full without limit of liability for any direct and indirect loss of or damage to the real or personal property of the Council or any third party, including Intellectual Property Rights, or injury claimed by any third party including any consequential loss which shall include, without limitation, pure economic loss, loss of profits, loss of business, depletion of goodwill and like loss and against all Liabilities awarded against or incurred by the Council (including legal expenses on an indemnity basis) arising from the Contractor’s negligence, any defect or fault in the Services or any act or omission of the Contractor in delivering the Services. 
+Part F - protection of information
+F1	Intellectual property	
+F1.1	All Intellectual Property Rights in any specifications, instructions, plans, data, 	drawings, databases, patents, patterns, models, designs or other material:
+F1.1.1	provided to the Contractor by the Council shall remain the 			property of the Council; and
+F1.1.2	prepared by or for the Contractor specifically for the use, or 			intended use, in relation to the performance of the Contract shall 		belong to the Council subject to any exceptions set out in the 		Contract Particulars.
+F1.2	The Contractor shall obtain necessary approval before using any material, in 	relation to the performance of the Contract which is or may be subject to any 	third party Intellectual Property Rights.  The Contractor shall procure that the 	owner of the Intellectual Property Rights grant to the Council a non-exclusive 	licence, or if the Contractor is itself a licensee of those rights, the Contractor 	shall grant to the Council an authorised sub-licence, to use, reproduce, and 	maintain the Intellectual Property Rights.  Such licence or sub-licence shall be 	non-exclusive, perpetual and irrevocable, shall include the right to sub-license, 	transfer, novate or assign to other Councils, the Replacement Contractor or to 	any other third party providing Services to the Council, and shall be granted at 	no cost to the Council.
+F1.3	It is a condition of the Contract that the Services will not infringe any 	Intellectual Property Rights of any third party and the Contractor shall during 	and after the Contract Period on written demand indemnify and keep 	indemnified without limitation the Council against all Liabilities which the 	Council may suffer or incur as a result of or in connection with any breach of 	this clause, except where any such claim relates to the act or omission of the 	Council.
+F1.4	At the termination of the Contract the Contractor shall at the request of the 	Council immediately return to the Council all materials, work or records held in 	relation to the Services, including any back-up media.
+F2  	Data Protection 	
+F2.1	The Contractor shall (and shall procure that any of its staff involved in the provision of the Services) comply with any requirements under the Data Protection Legislation.  The Parties acknowledge that for the purposes of the Data Protection Legislation, the Council is the Controller and the Contractor is the Processor. The only processing that the Contractor is authorised to do is determined by the Council and detailed in the tender/quotation documentation and may not be determined by the Contractor.
+F2.2	The Contractor shall notify the Council immediately if it considers that any of the Council's instructions infringe the Data Protection Legislation.
+F2.3	The Contractor shall provide all reasonable assistance to the Council in the preparation of any Data Protection Impact Assessment prior to commencing any processing. Such assistance may, at the discretion of the Council, include:
+F2.3.1   a systematic description of the envisaged processing operations and the purpose of the processing;
+F2.3.2   an assessment of the necessity and proportionality of the processing operations in relation to the Services;
+F2.3.3   an assessment of the risks to the right and freedoms of Data Subjects; and
+F2.3.4   the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of Personal Data.
+F2.4	The Contractor shall, in relation to any Personal Data processed in connection with its obligations under this Agreement:
+F2.4.1   process that Personal Data only in accordance with the Council’s written instructions as detailed in the tender/quotation documentation, unless the Contractor is required to do otherwise by Law. If it is so required the Contractor shall promptly notify the Council before processing the Personal Data unless prohibited by Law;
+ F2.4.2 ensure that it has in place Protective Measures, which have been reviewed and approved by the Council as appropriate to protect against a Data Loss Event having taken account of the:
+F2.4.2.1  nature of the data to be protected;
+F2.4.2.2  harm that might result from a Data Loss Event;
+F2.4.2.3  state of technological development; and
+F2.4.2.4  cost of implementing any measures;
+   F2.4.3 ensure that:
+F2.4.3.1 the Contractor Personnel do not process Personal Data except in accordance with this Agreement and the Council’s written instructions as detailed in the tender/quotation documentation.
+F2.4.3.2 it takes all reasonable steps to ensure the reliability and integrity of any Contractor Personnel who have access to the Personal Data and ensure that they:
+A. are aware of and comply with the Contractor’s duties under this clause;
+B. are subject to appropriate confidentiality undertakings with the Contractor or any Sub-processor;
+C. are informed of the confidential nature of the Personal Data and do not publish, disclose or divulge any of the Personal Data to any third Party unless directed in writing to do so by the Council or as otherwise permitted by this Agreement; and
+D. Have undergone adequate training in the use, care, protection and handling of Personal Data; and
+F2.4.4 not transfer Personal Data outside of the UK unless the prior written consent of the Council has been obtained and the following conditions are fulfilled:
+F2.4.4.1 the Council or the Contractor has provided appropriate safeguards in relation to the transfer as determined by the Council;
+F2.4.4.2 the Data Subject has enforceable rights and effective legal remedies;
+F2.4.4.3 the Contractor complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist the Council in meeting its obligations); and
+F2.4.4.4 the Contractor complies with any reasonable instructions notified to it in advance by the Council with respect to the processing of the Personal Data;
+F2.4.5   at the written direction of the Council, delete or return Personal Data (and any copies of it) to the Council on termination of the Agreement unless the Contractor is required by Law to retain the Personal Data.
+F2.5	Subject to clause F2.6, the Contractor shall notify the Council by email, to xxxxxxx@example.com using the breach management form at Appendix 1, within 24hrs, if it:
+F2.5.1   receives a Data Subject Access Request (or purported Data Subject Access Request);
+F2.5.2   receives a request to rectify, block or erase any Personal Data;
+F2.5.3   receives any other request, complaint or communication relating to either Party's obligations under the Data Protection Legislation;
+F2.5.4   receives any communication from the Information Commissioner or any other regulatory authority in connection with Personal Data processed under this Agreement;
+F2.5.5  receives a request from any third Party for disclosure of Personal Data where compliance with such request is required or purported to be required by Law
+Or
+F2.5.6  becomes aware of a Data Loss Event.
+F2.6	The Contractor’s obligation to notify under clause F2.5 shall include the provision of further information to the Council in phases, as details become available.
+F2.7	Taking into account the nature of the processing, the Contractor shall provide the Council with full assistance in relation to either Party's obligations under Data Protection Legislation and any complaint, communication or request made under clause F2.5 (and insofar as possible within the timescales reasonably required by the Council) including by promptly providing:
+F2.7.1   the Council with full details and copies of the complaint, communication or request;
+F2.7.2   such assistance as is reasonably requested by the Council to enable the Council to comply with a Data Subject Access Request within the relevant timescales set out in the Data Protection Legislation;
+F2.7.3  the Council, at its request, with any Personal Data it holds in relation to a Data Subject;
+F2.7.4   assistance as requested by the Council following any Data Loss Event;
+F2.7.5   assistance as requested by the Council with respect to any request from the Information Commissioner’s Office, or any consultation by the Council with the Information Commissioner's Office.
+F2.8     The Contractor shall maintain complete and accurate records and information to demonstrate its compliance with this clause. This requirement does not apply where the Contractor employs fewer than 250 staff, unless:
+F2.8.1. the Council determines that the processing is not occasional;
+F2.8.2   the Council determines the processing includes special categories of data as referred to in Article 9(1) of the UK GDPR or Personal Data relating to criminal convictions and offences referred to in Article 10 of the UK GDPR; and
+F2.8.3   the Council determines that the processing is likely to result in a risk to the rights and freedoms of Data Subjects.
+F2.9	The Contractor shall allow for audits of its Data Processing activity by the Council or the Council’s designated auditor.
+F2.10	The Contractor shall designate a data protection officer if required by the Data Protection Legislation.
+F2.11	Before allowing any Sub-processor to process any Personal Data related to this Agreement, the Contractor must:
+F2.11.1 notify the Council in writing of the intended Sub-processor and processing;
+F2.11.2 obtain the written consent of the Council;
+F2.11.3 enter into a written agreement with the Sub-processor which give effect to the terms set out in this Agreement such that they apply to the Sub-processor; and
+F2.11.4 provide the Council with such information regarding the Sub- processor as the Council may reasonably require.
+F2.12   The Contractor shall remain fully liable for all acts or omissions of any Sub-processor.
+F2.13   The Council may, at any time on not less than 30 Working Days’ notice, revise this clause by replacing it with any applicable controller to processor standard clauses or similar terms forming part of an applicable certification scheme (which shall apply when incorporated by attachment to this Agreement).
+F2.14   The Parties agree to take account of any guidance issued by the Information Commissioner’s Office. The Council may on not less than 30 Working Days’ notice to the Contractor amend this agreement to ensure that it complies with any guidance issued by the Information Commissioner’s
+F3.	Freedom of Information	
+F3.1	The Contractor acknowledges that the Council is subject to the requirement of 	the Code of Practice on Government information, FOIA and the EIR and shall 	assist and cooperate with the Council to enable the Council to comply with its 	information disclosure obligations. 
+F3.2	The Contractor shall and shall procure that its sub-contractors shall do all of 	the following where relevant.
+F3.2.1	Transfer to the Council all requests for information that it 			receives as soon as practicable and in any event within two 			Business Days of receiving a Request for Information. 
+F3.2.2	Provide the Council with a copy of all information in its 			possession, or power in the form that the Council requires within 		five Business Days (or such other period as the Council may 		specify) of the Council’s request.
+F3.2.3	Provide all necessary assistance as reasonably requested by the 		Council to enable the Council to respond to the Request for 			Information within the time for compliance set out in section 10 of 		the FOIA or regulation 5 of the EIR.
+F3.3	The Council shall be responsible for determining in its absolute discretion 	despite any other provision in this  Contract or any other agreement whether 	the Commercially Sensitive Information and/or any other information is exempt 	from disclosure in accordance with the provisions of the Code of Practice on 	Government Information, FOIA or the EIR
+F3.4	In no event shall the Contractor respond directly to a Request for Information 	unless expressly authorised to do so by the Council.
+F3.5	The Contractor acknowledges that (despite the provisions of clause F4) the 	Council may, be obliged under the FOIA, or the EIR to disclose information 	concerning the Contractor or the Services:
+F3.5.1	in certain circumstances without consulting the Contractor; or
+F3.5.2	following consultation with the Contractor and having taken their 		views into account.  
+F3.6	Provided always that where clause F3.5.1 applies the Council shall, in 	accordance with any recommendations of the code, take reasonable steps, 	where appropriate, to give the Contractor advance notice, or failing that, to 	draw the disclosure to the Contractor’s attention after any such disclosure.
+F3.7	The Contractor shall make sure that all information is retained for disclosure in 	accordance with any record keeping obligations of the Contractor under this 	Contract and shall permit the Council to inspect such records as requested 	from time-to-time.
+F3.8	The Contractor acknowledges that the Commercially Sensitive Information is indicative only and that the Council may be obliged to disclose it in accordance with clause F3.
+F4	Confidentiality and Publicity	
+F4.1	Except to the extent set out in this clause or where disclosure is expressly 	permitted elsewhere in this Contract, each party shall do each of the following:
+F4.1.1	Treat the other party’s Confidential Information as confidential 		and safeguard it accordingly; and
+F4.1.2	Not disclose the other party’s Confidential Information to any 		other person without the owner’s prior written consent.
+F4.2	Paragraph F4.1 shall not apply to the extent that any one or more of the 	following applies to the relevant information or disclosures:
+F4.2.1	Such disclosure is a requirement of Law placed upon the party 		making the disclosure, including any requirements for disclosure 		under the FOIA, Code of Practice on Access to Government 			Information or the EIR pursuant to clause F3 (Freedom of 			Information);
+F4.2.2	Such information was in the possession of the party making the 		disclosure without obligation of confidentiality prior to its 			disclosure by the information owner;
+F4.2.3	Such information was obtained from a third party without 			obligation of confidentiality;
+F4.2.4	Such information was already in the public domain at the time of 		disclosure otherwise than by a breach of this Contract; and
+F4.2.5	It is independently developed without access to the other party’s 		Confidential Information.
+F4.3	The Contractor may only disclose the Council’s Confidential Information to the 	Contractor personnel who are directly involved in the provision of the Services 	and who need to know the information, and shall make sure that such 	Contractor personnel are aware of and shall comply with these obligations as 	to confidentiality.
+F4.4	The Contractor shall not, and shall procure that the Contractor personnel do 	not, use any of the Council’s Confidential Information received other than for 	the purposes of this Contract.
+F4.5	At the written request of the Council and if reasonable in the circumstances to 	make that request, the Contractor shall procure that those members of the 	Contractor personnel identified in the Council’s notice sign a confidentiality 	undertaking prior to commencing any work in accordance with this Contract.
+F4.6	Nothing in this Contract shall prevent the Council from disclosing the 	Contractor’s Confidential Information in any one or more of the following 	circumstances.
+F4.6.1	To any Crown body or any other contracting authority as defined 		in Regulation 5(2) of the Public Contracts (Works, Services and 		Supply) (Amendment) Regulations 2000 other than the Council.  		All crown bodies or such contracting authorities receiving such 		Confidential Information shall be entitled to further disclose the 		Confidential Information to other Crown bodies or other such 		contracting authorities on the basis that the information is 			confidential and is not to be disclosed to a third party which is not 		part of any Crown body or other contracting authority;
+F4.6.2	To any consultant, Contractor or other person engaged by the 		Council or any person conducting an Office of Government 			Commerce gateway review;
+F4.6.3	For the purpose of the examination and certification of the 			Council’s accounts; and/or
+F4.6.4	For any examination pursuant to section 6(1) of the National 			Audit Act 1983 of the economy, efficiency and effectiveness with 		which the Council has used its resources.
+F4.7	Contractors are advised that the Council is required to publish new local 
+government contracts, tender documents and invoice information for expenditure over £5000.
+F4.8	Without prejudice to the Council’s obligations to publish local government contracts over £500 or the Council’s obligations under the FOIA or EIR, the Contractor shall not make any press announcements or publicise this Contract or any part thereof in any way, except with the written consent of the Council (such consent not to be unreasonably withheld or delayed).
+F4.9	Both parties shall take all reasonable steps to ensure the observance of the provisions of this clause by all of their servants, employees, sub-contractors, agents, professional advisors and consultants.
+F5	Record keeping and monitoring 	
+F5.1	The Contractor will at its own cost, provide any information that may be 	required by the Council to comply with the Council’s procedures for monitoring 	of the Contract.
+F5.2	In order to assist the Council in its record keeping and monitoring 	requirements including auditing and National Audit Office requirements, the 	Contractor shall keep and maintain for six years (or such longer time period 	required in accordance with any specific legislation) after the Contract has 	been completed, full and accurate records of the Contract including the 	Services supplied under it, all expenditure reimbursed by the Council, and all 	payments made by the Council.  The Contractor shall on request allow the 	Council or the Council’s representatives such access to (and copies of) those 	records as may be required by the Council in connection with the Contract.
+F5.3	The Contractor will at its own cost, provide any information that may be 	required by the Council to comply with the Council’s procedures for monitoring 	of the Contract.
+F5.4	Any documents held by the Contractor during the Contract Period will be made available to the Council, upon a written request by the Council.  Documents by the Contractor will be provided within forty eight hours at the written request by the Council.
+part g - statutory obligations
+G1	Health and safety	
+G1.1	The Contractor shall comply with all health and safety legislation in force and 	all health and safety policies of the Council.
+G2.	Corporate requirements	
+G2.1	The Contractor shall comply with all obligations under the HRA.
+G2.2	The Contractor shall comply with all Council policies and rules, such as, but 	not limited to:
+G2.2.1	equality and diversity policies;
+G2.2.2	sustainability;
+G2.2.3	information security rules;
+G2.2.4	whistle blowing and/or confidential reporting policies; 
+G2.2.5	all site rules relevant to the fulfilment of the Contractor’s 			obligations in the performance of the Services; 
+G2.2.6	Safeguarding Policy;
+G2.2.7	Social Value; and
+G2.2.8	Modern Slavery
+G2.3	The Contractor shall not unlawfully discriminate within the meaning and scope 	of any Law, enactment, order, or regulation relating to discrimination (whether 	age, race, gender, religion, disability, sexual orientation or otherwise) in 	employment.
+G2.4	The Contractor shall comply with all relevant legislation relating to its 	Employees however employed including (but not limited to) the compliance in 	Law of the ability of the Employees to work in the United Kingdom.
+G2.5	If the Contractor has a finding against it relating to its obligations under clause 	G2.4 it will provide the Council with:
+G2.5.1	details of the finding; and
+G2.5.2	the steps the Contractor has taken to remedy the situation.
+G3	Law and Change in Law	
+G3.1	The Contractor shall comply at all times with the Law in its performance of the 	Contract.
+G3.2	On the occurrence of a Change in Law which has a direct effect upon the 	Price the parties shall meet within 14 days of the Contractor notifying the 	Council of the Change in Law to consult and seek to agree the effect of the 	Change in Law and any change in the Price as a result following the principle 	that this clause is not intended to create an artificial cushion from market 	forces for the Contractor.  If the parties, within 14 days of this meeting, have 	not agreed the occurrence or the impact of the Change in Law, either party 	may refer the matter to dispute resolution in accordance with clause D3.
+G3.3	Any agreed additional sums payable as a result of the operation of clause 	G3.2 shall be included in the Price. For the avoidance of doubt nothing in this 	Contract is intended to allow the Contractor double recovery of any increase in 	costs. 
+G4	TUPE and re-tendering	
+G4.1	The Contractor and the Council hereby acknowledge that the termination of the Contractor’s provision of some or all of the Services may constitute one or more transfers under TUPE, whereby the employment of one or more of the future transferring employees will transfer to the Council and/or a new service provider.  The Parties agree to co-operate with each other in this regard to ensure that they comply with TUPE in respect of any future transferring employees with regard to when and to whom their employment transfers.
+G4.2	In the event of expiry or termination of this Contract or whenever reasonably 	requested by the Council in preparation for tendering arrangements the 	Contractor will provide the Council with such assistance as the Council may 	require and provide at no cost to the Council any information the Council 	(whether on its own account or on behalf of any potential or confirmed 	Replacement Contractor) may request in relation to the Employees including 	but not limited to, providing Employee liability information as required under 	Regulation 11 of TUPE. 
+G4.3	The Contractor authorises the Council to pass any information supplied to any 	Replacement Contractor or potential Replacement Contractor and the 	Contractor will secure all necessary consents from relevant Employees in 	order to do this. 
+G4.4	The Contractor will keep the Council and any Replacement Contractor 	indemnified in full against all Liabilities arising directly or indirectly in 	connection with any breach of this clause or inaccuracies in or omissions from 	the information provided.
+part H - general provisions 
+H1	Contract variation	
+H1.1	Subject to clause H1.2, no variation or modification to the Contract is valid 	unless it is in writing and signed by the Council and the Contractor.
+H1.2	The Council shall be entitled to issue to the Contractor in writing or, in case of 	urgency orally (provided the Council confirms oral instructions in writing as 	soon as it is practicable), variation orders requiring the addition, suspension, 	reduction or cessation of provision of any Services and/or the provision of 	emergency Services in accordance with revised delivery instructions. The 	Contractor shall charge for the impact of the variation order in accordance with 	the rates and prices used to calculate the Price in the Tender.
+H2	Third party rights	
+H2.1	This Contract is enforceable by the original parties to it, by their successors in 	title and permitted assignees.  Any rights of any person to enforce the terms of 	this Contract pursuant to The Contracts (Rights of Third Parties) Act 1999 are 	excluded.
+H3	No waiver	
+H3.1	Failure by either party at any time to enforce any one or more of the provisions 	of this Contract or to require performance by the other party of any of the 	provisions shall not constitute or be construed as a waiver of the provision or 	of the right at any time subsequently to enforce all terms and conditions of this 	Contract nor affect the validity of the Contract or any part of it or the right of 	the parties to enforce any provision in accordance with its terms.
+H3.2	No waiver of any of the provisions of this Contract shall be effective unless it is 	expressed to be a waiver in writing and communicated in accordance with 	clause A3 (Notices).
+H4	Severance	
+H4.1	If any provision of the Contract shall become or shall be declared by any court 	of competent jurisdiction to be invalid or unenforceable in any way, such 	invalidity shall not impair or affect any other provision all of which shall remain 	in full force and effect.
+H5	Assignment, sub-contracting and responsibility	
+H5.1	Subject to any express provision of this Contract, the Contractor shall not 	without the prior written consent of the Council, assign all or any benefit, right 	or interest under this Contract or sub-contract the provision of the Services. 
+H5.2	The Council shall be entitled to:
+H5.2.1	assign, novate or dispose of its rights and obligations under this 		Contract either in whole or part to any contracting authority (as 		defined in The Public Contracts Regulations 2006); or
+H5.2.2	transfer, assign or novate its rights and obligations where 			required by Law.
+H5.3	The Contractor shall remain responsible and liable for the acts and omissions 	of any other members of a consortium arrangement, sub-contractors, 	servants, agents and Employees as though they were its own.
+H6	Force Majeure	
+H6.1	Neither party shall be liable for failure to perform its obligations under the 	Contract if such failure results from Force Majeure.
+H6.2	If the Council or the delivery location is affected by circumstance of Force 	Majeure, the Council shall be entitled to, totally or partially, suspend the date 	or dates for delivery of the Services until the circumstances of the Force 	Majeure have ceased.  The suspension shall not give rise to any claim by the 	Contractor against the Council nor entitle the Contractor to terminate the 	Contract.
+H6.3	Industrial action by, or illness or shortage of the Contractor’s Employees, 	agents or subcontractors, failure or delay by any of the Contractor’s suppliers 	to supply goods, components, Services or materials and breach of the 	Contractor’s warranties under clause B6 shall not be regarded as an event of 	Force Majeure.
+H6.4	If the event of Force Majeure continues for more than two months either party 	may give written notice to the other to terminate the Contract immediately or 	on a set termination date.
+H6.5	If the Contract is terminated in accordance with clause H6.4 neither party will 	have any liability to the other except that any rights and Liabilities which 	accrued prior to termination will continue to exist. 
+H7	Inducements	
+H7.1	The Contractor shall not offer or give, or agree to give, to any employee, 	agent, servant or representative of the Council any gift or consideration of any 	kind as an inducement or reward for doing, any act in relation to the obtaining 	or execution of the Contract or any other contract with the Council, or for 	showing or refraining from showing favour or disfavour to any person in 	relation to the Contract or any such contract.  The attention of the Contractor 	is drawn to the criminal offences under the Bribery Act 2010. 
+H7.2	The Contractor warrants that it has not paid commission nor agreed to pay any 	commission to any employee or representative of the Council by the 	Contractor or on the Contractor’s behalf.
+H7.3	Where the Contractor engages in conduct prohibited by clauses H7.1 and 	H7.2 in relation to this or any other contract with the Council, the Council has 	the right to:
+H7.3.1	terminate the Contract and recover from the Contractor the 			amount of any loss suffered by the Council resulting from the 		termination, including the cost reasonably incurred by the 			Council of making other arrangements for the provision of the 		Services and any additional expenditure incurred by the Council 		throughout the remainder of the Contract Period; or
+H7.3.2	recover in full from the Contractor any other loss sustained by 		the Council in consequence of any breach of this clause whether 		or not the Contract has been terminated.
+H8	Costs and expenses	
+H8.1	Each of the parties will pay their own costs and expenses incurred in 	connection with the negotiation, preparation, execution, completion and 	implementation of this Contract.
+H9	No agency or partnership	
+H9.1	Nothing contained in this Contract, and no action taken by the parties pursuant 	to this Contract, will be deemed to constitute a relationship between the 	parties of partnership, joint venture, principal and agent or employer and 	employee.  Neither party has, nor may it represent that it has, any authority to 	act or make any commitments on the other party’s behalf.
+H10	Non solicitation and offers of employment	
+H10.1	The Contractor agrees that it will not, without the prior written consent of the 	Council, whether directly or indirectly, and whether alone or in conjunction 	with, or on behalf of, any other person and whether as a principal, 	shareholder, director, employee, agent, consultant, partner or otherwise during 	the Contract Period or for a period of 12 months following termination of this 	Contract:
+H10.1.1	solicit or entice, or endeavour to solicit or entice, away from the 		Council, any person directly related to the Services employed in 		a senior capacity in a managerial, supervisory, technical, sales 		or administrative capacity by, or who is or was a consultant to, 		the Council at the date of the termination of this Contract or at 		any time during the period of one month immediately preceding 		the date of termination; or
+H10.1.2	attempt, or knowingly assist or procure any other person to do 		the above.
+H11	Inspection of Contractor’s premises	
+H11.1	The Contractor shall permit the Council to make any inspections or tests which 	may reasonably be required in respect of the Contractor’s premises in relation 	to the Contract.
+H12	Law and jurisdiction	
+H12.1	This Contract shall be governed by the laws of England and shall be subject to 	the exclusive jurisdiction of the English courts.
+H13   	Exit Management
+H13.1  Without prejudice to any other rights and obligations in this contract, the Contractor shall co-operate and provide all assistance reasonably required by the Council to ensure an orderly transition of the Services to the Council or any replacement contractor in the event of termination or expiry of this agreement.
+H13.2	The Council may direct that the Contractor shall, within three (3) Months after the Start Date, deliver to the Council a plan which complies with the requirements set out by the Council and is otherwise reasonably satisfactory to the Council (the "Exit Plan").
+H13.3	The Parties shall use reasonable endeavours to agree the contents of the Exit Plan. If the Parties are unable to agree the contents of the Exit Plan within twenty (20) Working Days of the latest date for its submittals pursuant to Clause H13.2, then such Dispute shall be resolved in accordance with the Dispute Resolution Procedure.Appendix 1 – Breach Management Form
+** To be emailed to the Data Protection officer (“DPO”) within 24 hours to xxxxxxx@example.com **
+
+| Contact Details of Person Submitting Form                                                                                                                                                                                                                        | 
+| Contract Reference:                                                                                                                                                                                                                                              |  | 
+| Name                                                                                                                                                                                                                                                             |  | 
+| Job Title                                                                                                                                                                                                                                                        |  | 
+| Address                                                                                                                                                                                                                                                          |  | 
+| Telephone Number                                                                                                                                                                                                                                                 |  | 
+| Email Address                                                                                                                                                                                                                                                    |  | 
+| Incident Information                                                                                                                                                                                                                                             | 
+| Date  and Time of Breach                                                                                                                                                                                                                                         |  | 
+| Date and Time Breach Detected                                                                                                                                                                                                                                    |  | 
+| Who / What Reported the Breach                                                                                                                                                                                                                                   |  | 
+| Description and type of the Breach                                                                                                                                                                                                                               |  | 
+| The likelihood and severity of the resulting risk to people’s rights and freedoms.  i.e.  Could result in physical, material or non-material damage to natural persons such as loss of control over their personal data or limitation of their rights, discrimination, identity theft or fraud, financial loss, unauthorised reversal of pseudonymisation, damage to reputation, loss of confidentiality of personal data protected by professional secrecy or any other significant economic or social disadvantage to the natural person concerned.” |  | 
+| Approximate Number of Data Subjects Affected                                                                                                                                                                                                                     |  | 
+| Details of any  ICT Systems Involved                                                                                                                                                                                                                             |  | 
+| Details of any action taken to mitigate effect on individuals                                                                                                                                                                                                    |  | 
+| Who is aware of the breach                                                                                                                                                                                                                                       |  | 
+| Date notified to DPO                                                                                                                                                                                                                                             |  | 
+
+For DPO use only
+
+| Date received by DPO                                                                                              |  | 
+| The likelihood and severity of the resulting risk to people’s rights and freedoms.                                |  | 
+| Inform ICO Yes/No                                                                                                 |  | 
+| Date of informing ICO and details of person spoken to and ref no (if provided)                                    |  | 
+| If not reported, why not                                                                                          |  | 
+| Conclusion, after investigation                                                                                   |  | 
+| Date of informing ICO of conclusion. after investigation and details of person spoken to and ref no (if provided) |  | 
+| Signed off by                                                                                                     |  | 
+| Date signed off                                                                                                   |  | 
+
+[37]

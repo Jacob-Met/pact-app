@@ -1,0 +1,159 @@
+/* The same source-to-draft layout serves first and later commitments. */
+.citation-source { min-width:0; }
+.source-panel input,.source-panel select,.source-panel textarea { font-weight:400; }
+.citation-source .selection-row { align-items:start; flex-direction:column; gap:.6rem; }
+#obligation-network[hidden],.evidence-panel[hidden],.evaluation-details[hidden],.audit-panel[hidden],#dependency-field[hidden],.passage-preview[hidden] { display:none!important; }
+
+#source-passage { margin-top:.35rem; max-width:100%; font-weight:400; }
+.passage-preview { margin:.6rem 0 0; border-left:2px solid #859baa; padding:.2rem 0 .2rem .6rem; font-size:.8rem; line-height:1.55; overflow-wrap:anywhere; }
+.citation-source button:disabled { opacity:.5; cursor:default; }
+
+.source-range-controls { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:.65rem; }
+.source-range-controls label { min-width:0; }
+.source-range-controls select { width:100%; max-width:100%; margin-top:.35rem; font-weight:400; }
+.source-range-count { margin:.35rem 0 0; font-size:.75rem; color:var(--muted); min-height:1.1em; }
+.passage-preview { max-height:15rem; overflow:auto; white-space:pre-wrap; }
+.criterion-tools { margin-top:-.45rem; }
+.criterion-tools button { font-size:.8rem; padding:.3rem .5rem; }
+@media(max-width:430px) { .source-range-controls { grid-template-columns:minmax(0,1fr); gap:.4rem; } }
+
+#citation-details { width:100%; font-size:.8rem; }
+#citation-details summary { cursor:pointer; color:var(--muted); }
+#citation-details[hidden] { display:none; }
+#citation-details .passage-preview { margin-top:.5rem; }
+.captured-source-passage > button { margin-inline-end:.5rem; margin-bottom:.5rem; }
+#obligation-form [name=criterion] { min-height:7rem; max-height:26.25rem; tab-size:2; }
+#obligation-form [name=criterion][hidden],#criterion-reading[hidden],#criterion-mode[hidden] {display:none;}
+.criterion-editor {min-width:0;}
+.criterion-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.criterion-heading label {font-size:13px;color:#405569;}
+#criterion-mode {padding:4px 0;min-height:36px;border:0;background:transparent;color:#73231e;font-size:13px;white-space:nowrap;}
+.criterion-reading {box-sizing:border-box;min-height:7rem;max-height:26.25rem;overflow:auto;overscroll-behavior:contain;margin-top:7px;padding:14px 16px;border:1px solid #c7d2dc;border-radius:6px;background:white;color:#282321;font:17px/1.65 var(--pact-contract-font,"Source Serif 4",Georgia,serif);overflow-wrap:anywhere;}
+.criterion-reading:focus-visible {outline:2px solid #194d9b;outline-offset:2px;}
+#criterion-reading > .citation-paragraph {display:block;margin:0 0 .85em;white-space:normal;}
+#criterion-reading > .citation-break {display:block;white-space:normal;font-size:0;line-height:0;margin:0;}
+#criterion-reading > .citation-table-rows {margin:.8em 0;padding:.65em 0 0;border-top:1px solid #e1e5eb;white-space:normal;}
+#criterion-reading .citation-table-markup,#criterion-reading .citation-table-break {display:none;}
+#criterion-reading .citation-table-cell {display:block;padding-right:0;}
+#criterion-reading .citation-table-cell:not(.citation-table-cell ~ .citation-table-cell) {font-weight:600;}
+@media(max-width:600px) {#criterion-reading .citation-table-multiline:has(>.citation-table-cell) {grid-template-columns:minmax(0,1fr);row-gap:6px;}}
+/* Keep the agreement beside its draft for both first and later commitments. */
+#workbench #workspace-agreement { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:20px 28px; align-items:start; }
+#workbench #workspace-agreement > .source-panel { display:contents; }
+#workspace-agreement .source-panel > .section-head { grid-column:1/-1; grid-row:1; margin:0; }
+#workspace-agreement .source-panel > .section-head h2 { font-size:25px; letter-spacing:-.025em; }
+#workbench #workspace-agreement .citation-source { grid-column:1; grid-row:2; padding:22px; border:1px solid #d2dce5; background:white; }
+#workbench #workspace-agreement #source-view { height:168px; min-height:120px; font:16px/1.65 Georgia,serif; color:#263c50; border-color:#d0d9e2; background:#fbfcfd; margin-top:10px; }
+#workbench #workspace-agreement #obligation-form { grid-column:2; grid-row:2/span 2; margin:0; padding:24px; border:1px solid #d2dce5; background:white; gap:20px; }
+#workspace-agreement #obligation-form > label { font-size:13px; color:#405569; }
+#workspace-agreement #obligation-form input,#workspace-agreement #obligation-form select,#workspace-agreement #obligation-form textarea { margin-top:7px; font-size:15px; padding:11px 12px; border-color:#c7d2dc; }
+#workspace-agreement #obligation-form textarea { line-height:1.55; }
+#workspace-agreement #obligation-form .primary { padding:12px 20px; font-size:15px; }
+#workbench #workspace-agreement > .proposal-sheet { grid-column:1; grid-row:3; border:1px solid #d2dce5; background:#f0f5fa; padding:22px; }
+#workspace-agreement .proposal-sheet h3 { margin-top:0; font-size:18px; }
+#workspace-agreement .proposal-sheet p { font-size:13px; line-height:1.5; }
+#workspace-agreement .proposal-sheet label { font-size:13px; }
+#workspace-agreement .proposal-sheet textarea { font-size:15px; min-height:76px; }
+#workspace-agreement .proposal-sheet > button { background:#194d9b; border-color:#194d9b; padding:11px 17px; }
+#workspace-agreement #source-guidance { font-size:12px; margin:10px 0 16px; }
+#workspace-agreement #source-passage, #workspace-agreement #source-passage-end { font-size:14px; padding:11px 12px; }
+#workspace-agreement .citation-source .actions { gap:8px; }
+#workspace-agreement .citation-source button { font-size:13px; padding:9px 12px; }
+#workspace-agreement #citation-preview { margin:0; font-size:12px; }
+#workbench #workspace-agreement #party-corrections { grid-column:1/-1; grid-row:4; }
+@media(max-width:800px) {
+ #workbench #workspace-agreement { grid-template-columns:minmax(0,1fr); gap:16px; }
+ #workbench #workspace-agreement .citation-source { grid-column:1; grid-row:2; padding:18px 16px; }
+ #workspace-agreement .source-panel > .section-head h2 { font-size:23px; }
+ #workbench #workspace-agreement #source-view { height:146px; min-height:120px; font-size:15px; line-height:1.55; }
+ #workbench #workspace-agreement > .proposal-sheet { grid-column:1; grid-row:3; padding:18px 16px; }
+ #workbench #workspace-agreement #obligation-form { grid-column:1; grid-row:4; padding:20px 16px; }
+ #workbench #workspace-agreement #party-corrections { grid-column:1; grid-row:5; }
+ #workspace-agreement #obligation-form input,#workspace-agreement #obligation-form select,#workspace-agreement #obligation-form textarea { font-size:16px; }
+}
+
+.agreement-file-intake { border-bottom:1px solid var(--line); padding-bottom:18px; }
+.agreement-file-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+#agreement-file-status:empty { display:none; }
+#agreement-file-status { margin:12px 0 0; font-size:14px; }
+#agreement-file-review { margin-top:18px; padding:20px; border:1px solid var(--line); background:#faf9f6; }
+#agreement-file-review[hidden] { display:none; }
+#agreement-file-review .section-head { gap:14px; }
+#agreement-file-review h3 { margin:0; }
+#agreement-import-text { font:16px/1.6 Georgia,serif; font-weight:400; margin:8px 0 16px; width:100%; }
+@media(max-width:600px) { #agreement-file-review { padding:14px; } #agreement-file-review .section-head { display:block; } #agreement-file-original { display:inline-block; margin:10px 0; } }
+
+/* Let a found clause lead; detailed range controls remain available on demand. */
+#workspace-agreement .source-custom-selection { display:flex; flex-wrap:wrap; gap:4px 18px; justify-content:flex-end; margin:.35rem 0 .75rem; }
+#workspace-agreement .source-custom-selection button { min-height:40px; padding:.25rem 0; border:0; background:transparent; color:#73231e; }
+.source-find .actions:not(:has(button:not(:disabled))) { display:none; }
+#source-passage-preview { padding:16px 18px; border-left:3px solid #8f241e; background:#faf8f4; color:#282321; font:17px/1.7 var(--pact-contract-font,"Source Serif 4",Georgia,serif); max-height:21rem; }
+#source-passage-preview.is-sentence, #ai-source-found.is-sentence { white-space:normal; }
+#workspace-agreement #use-source-passage { margin:.75rem 0 .25rem; padding:11px 16px; background:#8f241e; border-color:#8f241e; color:white; font-size:14px; }
+#use-source-passage[hidden] { display:none!important; }
+#source-range-picker { margin:.5rem 0 1rem; }
+#source-range-picker > summary { cursor:pointer; padding:.45rem 0; color:#73231e; font-size:13px; font-weight:600; }
+#source-range-picker[open] > summary { margin-bottom:.5rem; }
+#source-range-picker .source-extend { margin-bottom:0; }
+#source-range-picker .source-range-count { margin-top:.6rem; }
+@media(max-width:800px) {
+ #source-passage-preview { font-size:17px; padding:14px 16px; }
+ #workspace-agreement #use-source-passage { min-height:44px; }
+}
+
+.agreement-import-find { margin:16px 0 12px; }
+.agreement-import-find input { margin-top:6px; }
+.agreement-import-find-actions { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:8px; }
+#agreement-import-matches { margin-left:4px; color:var(--muted); font-size:13px; }
+
+/* While text is being reviewed, the review is the page's primary job. */
+#setup:has(#agreement-file-review:not([hidden])) > .section-head { display:none; }
+#setup:has(#agreement-file-review:not([hidden])) .agreement-file-actions > .muted { display:none; }
+#setup:has(#agreement-file-review:not([hidden])) .agreement-file-actions { gap:8px; }
+#agreement-file-review h3 { font-size:24px; line-height:1.25; }
+
+
+/* Each captured condition remains independently readable and linked to its original. */
+#citation-quote.passage-preview {max-height:none;overflow:visible;border:0;padding:0;white-space:normal;}
+.captured-source-passage {border:1px solid #d2dce5;border-radius:6px;margin:10px 0;background:#fff;}
+:is(#citation-details,#ai-selected-wording) .captured-source-passage > summary {padding:12px 14px;display:grid;gap:5px;color:#263c50;}
+.captured-source-index {font-size:12px;font-weight:700;color:#405569;}
+.captured-source-excerpt {font:16px/1.5 var(--pact-contract-font,"Source Serif 4",Georgia,serif);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.captured-source-passage[open] > summary {border-bottom:1px solid #d2dce5;background:#f3f6fa;}
+.captured-source-passage > blockquote {margin:14px;font:17px/1.7 var(--pact-contract-font,"Source Serif 4",Georgia,serif);color:#282321;overflow-wrap:anywhere;}
+.captured-source-passage > button {margin:10px 12px;}
+.captured-source-passage summary:focus-visible {outline:2px solid #194d9b;outline-offset:2px;}
+
+.captured-source-index::after {content:" · Read passage";font-weight:400;}
+.captured-source-passage[open] .captured-source-index::after {content:" · Hide passage";}
+
+/* The author reads source sections; storage partitions stay out of the outline. */
+:is(#citation-quote,#ai-selected-wording) .captured-source-section {margin:0;border:0;border-bottom:1px solid #d9dde2;border-radius:0;background:transparent;}
+:is(#citation-details,#ai-selected-wording) .captured-source-section > summary {display:grid;grid-template-columns:3rem 1fr;gap:12px;align-items:baseline;padding:15px 2px;min-height:48px;color:#253448;}
+.captured-source-section .captured-source-index {font:650 12px/1.6 var(--pact-ui-font,system-ui,sans-serif);color:#746152;}
+.captured-source-section .captured-source-index::after,.captured-source-section[open] .captured-source-index::after {content:none;}
+.captured-source-title {font:600 16px/1.4 var(--pact-ui-font,system-ui,sans-serif);}
+:is(#citation-details,#ai-selected-wording) .captured-source-section[open] > summary {background:transparent;border:0;color:#8f241e;}
+.captured-source-section[open] .captured-source-title::after {content:" −";color:#8f241e;}
+.captured-source-section:not([open]) .captured-source-title::after {content:" +";color:#7b8792;}
+.captured-source-reading {max-height:min(58vh,620px);overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:4px 10px 8px 0;}
+.captured-source-reading:focus-visible {outline:2px solid #194d9b;outline-offset:2px;}
+.captured-source-reading > blockquote {margin:0;color:#282321;font:17px/1.7 var(--pact-contract-font,"Source Serif 4",Georgia,serif);overflow-wrap:anywhere;}
+.captured-source-reading .citation-paragraph {display:block;margin:0 0 14px;white-space:normal;}
+.captured-source-reading .citation-break {white-space:pre-line;line-height:0;}
+.captured-source-reading .citation-table-markup,.captured-source-reading .citation-table-break {display:none;}
+.captured-source-reading .citation-table-rows {display:block;border-bottom:1px solid #e2ded7;padding-bottom:12px;}
+.captured-source-reading .citation-table-cell {display:block;white-space:normal;}
+.captured-source-reading .citation-table-cell:first-of-type {font-weight:650;}
+.captured-source-reading .citation-rate-rows {white-space:pre-wrap;}
+.captured-source-reading > button {margin:0 0 18px;}
+.captured-source-actions {display:flex;flex-wrap:wrap;gap:8px;padding:10px 0 16px;border-top:1px solid #e8e3db;}
+.captured-source-actions button {margin:0;}
+.captured-definitions {margin-top:12px!important;}
+.captured-definitions .captured-source-title {color:#63707b;}
+@media(max-width:600px) {
+ :is(#citation-details,#ai-selected-wording) .captured-source-section > summary {padding:14px 0;gap:8px;grid-template-columns:2.5rem 1fr;}
+ .captured-source-title {font-size:15px;}
+ .captured-source-reading {max-height:55vh;padding-right:4px;}
+ .captured-source-actions button {min-height:44px;}
+}

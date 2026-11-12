@@ -1,0 +1,508 @@
+@font-face {font-family:"Source Serif 4";font-style:normal;font-weight:200 900;font-display:swap;src:url("/vendor/source-serif/SourceSerif4.ttf") format("truetype");}
+/* PACT: a complete agreement, with recorded obligations in its margin. */
+:root {--ink:#191919;--muted:#686868;--paper:#fff;--panel:#fff;--line:#dedbd8;--green:#b3261e;--green2:#faeeec;--rust:#b3261e;--rust2:#faeeec;--shadow:none;}
+body {background:#fff;color:#191919;}
+h1,h2,h3 {font-family:Arial,Helvetica,sans-serif;}
+button,input,select,textarea,dialog,.panel,.project-bar,.badge {border-radius:2px;}
+button.primary,.network-action--payment,.network-inspector__evidence .network-link {background:#b3261e;border-color:#b3261e;color:#fff;}
+button.primary:hover,.network-action--payment:hover {background:#8b1b15;}
+button:hover {background:#f6f3f2;}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {outline-color:#b3261e;}
+.masthead {max-width:1600px;border-bottom:1px solid #191919;padding:20px 32px;}
+.product-identity h1 {font:800 27px/1 Arial,sans-serif;letter-spacing:-1.5px;}
+.product-identity span {font-size:12px;color:#686868;}
+main {max-width:1600px;padding:0 32px 48px;}
+.environment-badge {background:transparent;color:#686868;border:0;padding:0;letter-spacing:0;text-transform:none;}
+.project-bar {border:0;background:#fff;box-shadow:none;padding:25px 0 16px;align-items:center;}
+.project-bar > div:first-child {display:flex;flex-wrap:wrap;align-items:baseline;gap:3px 12px;min-width:0;}
+.project-bar h2 {order:0;font-size:18px;line-height:1.3;letter-spacing:-.3px;}
+.project-bar #project-meta {order:2;flex-basis:100%;margin-top:0;}
+.project-bar p {font-size:12px;}
+.project-files button {font-size:12px;padding:8px 12px;}
+.sample-label {order:1;font-size:10px;letter-spacing:0;text-transform:none;margin-bottom:0;}
+.workspace-navigation {margin-bottom:24px;gap:28px;}
+.workspace-navigation button[aria-current] {color:#b3261e;box-shadow:inset 0 -3px #b3261e;}
+.workspace-navigation button:hover {color:#b3261e;}
+.workspace-navigation button:focus-visible {outline-color:#b3261e;}
+.obligation-network {border:0;}
+.network-heading {background:white;border:0;border-bottom:1px solid #dedbd8;padding:0 0 14px;}
+.network-heading .network-title button,.network-link,.delivery-back {color:#b3261e;}
+.network-summary {border:0;font-size:11px;padding:10px 0;color:#686868;}
+.network-reading-tools {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 20px;border-bottom:1px solid #dedbd8;}
+.network-reading-tools > * {min-width:0;}
+.network-search-tools {border:0;}
+.network-search-tools[open] {grid-column:1 / -1;}
+.network-search-tools > summary {padding:8px 0 14px;color:#686868;font-size:12px;}
+.network-layout {grid-template-columns:minmax(170px,.62fr) minmax(340px,1.65fr) minmax(265px,1fr);gap:0;align-items:start;background:white;}
+.network-canvas {position:sticky;top:16px;padding:20px 18px 20px 0;}
+.network-columns {display:none;}
+.network-entry {border:0;}
+.network-entry__button {display:block;padding:16px 12px;border:0;border-left:2px solid transparent;background:#fff;}
+.network-entry__button[aria-pressed=true] {background:#faeeec;box-shadow:none;border-left-color:#b3261e;}
+.network-entry__button:hover {background:#f7f4f3;}
+.network-entry__source {padding-left:0;}
+.network-entry__number {position:static;color:#b3261e;font-size:11px;font-family:ui-monospace,monospace;}
+.network-entry__source .network-entry__title {font-size:14px;line-height:1.4;letter-spacing:0;}
+.network-entry__quote {display:none;}
+.network-entry__button > .network-entry__stage:nth-child(3) {margin-top:8px;}
+.network-entry__status {font-size:10px!important;font-weight:500!important;color:#686868!important;}
+.network-entry__sub {font:12px ui-monospace,monospace;color:#191919;}
+.network-entry__requires {padding:0 12px 14px;font-size:11px;}
+.network-entry__deadline {font-size:10px;}
+.contract-document {border-left:1px solid #dedbd8;border-right:1px solid #dedbd8;padding:34px 40px 80px;min-height:580px;background:#fff;}
+.contract-document header {padding:0 0 25px;border-bottom:1px solid #191919;margin-bottom:24px;}
+.contract-document__caption {font:11px Arial,sans-serif;color:#686868;margin:0 0 18px;}
+.contract-document h2 {font:600 30px/1.18 "Source Serif 4",Georgia,"Times New Roman",serif;letter-spacing:-.4px;margin:0 0 16px;}
+.contract-document__parties {font:12px/1.6 Arial,sans-serif;margin:0;color:#686868;}
+.contract-document__body {font:17px/1.9 "Source Serif 4",Georgia,"Times New Roman",serif;}
+.contract-source-break {display:block;height:14px;line-height:0;font-size:0;white-space:normal;}
+.contract-clause.citation-page-furniture {white-space:normal;}
+.contract-clause.citation-rate-rows {white-space:pre-line;}
+.contract-clause.citation-page-watermark {white-space:normal;}
+.contract-clause {position:relative;margin:0 0 26px;white-space:pre-wrap;overflow-wrap:anywhere;}
+.contract-clause__number {display:block;margin:0 0 5px;font:11px/1.5 ui-monospace,monospace;color:#8b8582;}
+.contract-citation {display:inline;padding:1px 0;border:0;border-bottom:1px solid #c3aca8;background:transparent;color:inherit;font:inherit;text-align:left;white-space:pre-wrap;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.contract-citation:hover {background:#f8e3df;}
+.contract-citation[aria-pressed=true] {background:#faeeec;border-bottom:2px solid #b3261e;color:#191919;}
+.contract-citation:focus-visible {outline:2px solid #b3261e;outline-offset:3px;}
+.network-inspector {border:0;background:white;padding:32px 0 28px 28px;}
+.network-inspector__header {display:block;}
+.network-inspector h3 {font-size:19px;line-height:1.35;letter-spacing:-.2px;}
+.network-selection {color:#b3261e;font:11px Arial,sans-serif;letter-spacing:0;}
+.network-inspector__amount {font:26px/1.3 ui-monospace,monospace;margin:16px 0 0;color:#191919;}
+.network-inspector__amount span {display:inline;text-align:left;margin-left:8px;letter-spacing:0;}
+.network-inspector__state {display:inline-block;border:1px solid #b3261e;color:#b3261e!important;padding:4px 7px;font-size:11px;margin:14px 0 22px;}
+.network-delivery {border:0;border-top:2px solid #b3261e;background:white;padding:18px 0 0;margin:0 0 24px;}
+.network-delivery .network-evidence-heading h4 {text-transform:none;letter-spacing:0;font-size:12px;color:#686868;}
+.network-delivery .network-inspector__evidence p {font-size:14px;color:#191919;}
+.network-delivery .network-inspector__evidence .network-link {font-size:13px;padding:9px 14px;border-radius:2px;}
+.network-source-version {color:#686868;text-transform:none;letter-spacing:0;}
+.network-inspector__quote {font:15px/1.7 "Source Serif 4",Georgia,serif;color:#191919;border-left:2px solid #b3261e;}
+.network-inspector__blockers {background:#faeeec;color:#b3261e;border-color:#b3261e;}
+.network-inspector__meta dd {color:#191919;}
+.network-inspector__note,.network-deadline {color:#686868;}
+.network-related__state {color:#686868;}
+.panel,.checkout-sheet,.proposal-sheet {background:white;box-shadow:none;border-color:#dedbd8;}
+.checkout-proof {border-color:#b3261e;background:#faf7f6;}
+.proposal-sheet > button {background:#b3261e;border-color:#b3261e;}
+@media(min-width:801px) {.network-entry__review {display:none;}}
+@media(max-width:1100px) and (min-width:801px) {
+ main {padding-left:20px;padding-right:20px;}
+ .network-layout {grid-template-columns:150px minmax(280px,1.5fr) minmax(230px,1fr);}
+ .contract-document {padding:28px 24px 60px;}
+ .network-inspector {padding-left:20px;}
+ .contract-document h2 {font-size:26px;}
+}
+@media(max-width:800px) {
+ .masthead {padding:16px 18px;} main {padding:0 18px 36px;}
+ .project-bar {padding:20px 0 12px;} .project-bar h2 {font-size:23px;}
+ .workspace-navigation {gap:22px;margin-bottom:20px;}
+ .workspace-navigation button {font-size:13px;}
+ .network-layout {display:flex;flex-direction:column;}
+ .network-canvas {position:static;order:0;width:100%;padding:0;}
+ .network-rows {display:flex;overflow-x:auto;border-bottom:1px solid #dedbd8;}
+ .network-entry {flex:0 0 210px;background:white!important;}
+ .network-entry__button {min-height:132px;width:100%;}
+ .network-entry__requires,.network-entry__review {display:none;}
+ .contract-document {order:1;width:100%;min-height:0;padding:28px 12px 20px;border:0;}
+ .contract-document h2 {font-size:28px;}
+ .contract-document__body {font-size:17px;}
+ .network-inspector {order:2;width:100%;padding:24px 12px;border-top:2px solid #b3261e;}
+ .network-inspector__header {display:flex;}
+ .network-inspector__amount {margin:0;font-size:24px;}
+ .network-inspector h3 {font-size:19px;}
+ .network-inspector__state {margin-top:12px;}
+ .network-heading .evaluate-row {flex:0 1 auto;}.network-title {flex:1 1 auto;}
+ .network-title button {font-size:12px;text-align:left;}
+ .network-heading .evaluate-row button {font-size:11px;}
+}
+
+/* Keep the text and its next decision visible without a page of chrome. */
+.masthead {padding-top:15px;padding-bottom:15px;}
+.project-bar {padding:12px 0 8px;margin-bottom:0;}
+.workspace-navigation {margin-bottom:0;}
+.workspace-navigation button {padding:10px 0;}
+.network-heading {padding:7px 0;border-bottom:0;}
+.network-summary {padding:8px 0;}
+.network-search-tools > summary {padding:8px 0;}
+.contract-document {padding-top:28px;}
+.contract-document header {padding-bottom:20px;margin-bottom:20px;}
+.contract-document__caption {margin-bottom:12px;}
+.contract-clause {margin-bottom:18px;}
+@media(max-width:800px) {
+ .masthead {padding:13px 18px;}
+ .project-bar {gap:9px;padding:14px 0 9px;}
+ .sample-label {display:none;}
+ .project-bar h2 {font-size:16px;line-height:1.3;}
+ .project-bar p {font-size:11px;margin-top:5px;}
+ .project-files {justify-content:flex-start!important;}
+ .project-files button {font-size:11px!important;padding:6px 8px!important;}
+ .workspace-navigation {gap:21px;margin-bottom:0;}
+ .workspace-navigation button {font-size:12px;padding:10px 0;}
+ .network-heading {padding:7px 0;}
+ .network-reading-tools {gap:0 10px;}
+
+ .network-summary {font-size:10px;padding:6px 0;}
+ .network-search-tools > summary {font-size:11px;padding:6px 0;}
+ .network-entry {flex-basis:185px;}
+ .network-entry__button {min-height:86px;padding:10px 12px;position:relative;}
+ .network-entry__source .network-entry__title {font-size:12px;}
+ .network-entry__number {font-size:10px;}
+ .network-entry__button > .network-entry__stage:nth-child(3) {margin-top:4px;}
+ .network-entry__status {display:none;}
+ .network-entry__sub {font-size:11px;}
+ .contract-document {padding:24px 4px 12px;}
+ .contract-document h2 {font-size:25px;}
+ .contract-document__caption {display:none;}
+ .contract-document__parties {font-size:11px;}
+ .contract-document header {padding-bottom:16px;margin-bottom:18px;}
+ .contract-document__body {font-size:16px;line-height:1.8;}
+ .contract-document__body > .network-inspector {padding:18px 14px;margin:0 0 22px;background:#fcf8f7;border-top:1px solid #b3261e;border-bottom:1px solid #e3d6d3;font:14px/1.5 Arial,sans-serif;}
+ .network-inspector__quote,.network-inspector .network-source-version,.network-inspector > .network-link {display:none;}
+ .network-inspector__state {margin:10px 0 14px;}
+ .network-inspector .network-selection {margin-bottom:7px;}
+ .network-inspector .network-delivery {margin-bottom:14px;padding-top:14px;}
+ .network-inspector .network-inspector__header {display:block;}
+ .network-inspector .network-inspector__amount {margin-top:9px;}
+ .network-inspector .network-inspector__amount span {font-size:10px;}
+}
+
+@media(max-width:800px) {
+ .project-bar {align-items:flex-start;}
+ .network-entry__review {display:block;padding:0 12px 12px;background:transparent!important;}
+ .network-entry__review p {display:none;}
+ .network-entry__review button {font-size:11px;padding:7px 9px;}
+ .network-entry__button {min-height:80px;}
+}
+
+/* Shared passages let the reader choose the obligation without guessing. */
+.contract-obligation-choices {
+  margin: 0 0 22px;
+  padding: 14px;
+  border-top: 2px solid #b3261e;
+  border-bottom: 1px solid #dedbd8;
+  background: #fcf8f7;
+  color: #191919;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+.contract-obligation-choices__heading { margin: 0 0 10px; font-weight: 700; }
+.contract-obligation-choices ul { list-style: none; padding: 0; margin: 0; }
+.contract-obligation-choices li + li { border-top: 1px solid #e3d6d3; }
+.contract-obligation-choices [data-contract-choice] {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; width: 100%; padding: 12px 4px;
+  background: transparent; border: 0; text-align: left; color: #191919;
+}
+.contract-obligation-choices [data-contract-choice][aria-pressed=true] { color: #b3261e; }
+.contract-obligation-choices [data-contract-choice]:hover { background: #faeeec; }
+.contract-obligation-choices__amount { font: 12px/1.5 ui-monospace, monospace; white-space: nowrap; }
+.contract-obligation-choices .contract-obligation-choices__close {
+  display: block; margin: 8px 0 0 auto; border: 0;
+  background: transparent; padding: 6px 4px; color: #686868;
+}
+.contract-citation[aria-haspopup]::after {
+  content: attr(data-contract-obligation-count) " ▾";
+  display: inline-block; margin-left: 5px; padding: 1px 3px;
+  border: 1px solid #b3261e; color: #b3261e; background: #fff;
+  font: 600 10px/1.2 Arial, Helvetica, sans-serif;
+  vertical-align: super; white-space: nowrap;
+}
+@media (max-width: 800px) {
+ .contract-obligation-choices { margin-inline: 0; padding: 12px; }
+ .contract-obligation-choices [data-contract-choice] { align-items: start; }
+}
+
+/* Payment review retains the contract's typography and explicit red actions. */
+.payment-receipt-amount {font:600 40px/1.2 ui-monospace,monospace;letter-spacing:-1.8px;}
+.payment-currency {font:12px/1.5 Arial,sans-serif;margin-left:7px;}
+.payment-source-details #pay-review {font:17px/1.8 "Source Serif 4",Georgia,serif;padding:14px 16px;}
+.payment-sandbox-badge {border-color:#dedbd8;color:#686868;border-radius:2px;}
+#pay-prepare:not([hidden]),#pay-capture:not([hidden]),#pay-approval:not([hidden]) {background:#b3261e;color:white;border-color:#b3261e;}
+#pay-prepare:not([hidden]):hover,#pay-capture:not([hidden]):hover,#pay-approval:not([hidden]):hover {background:#8b1b15;}
+#pay-restore:not([hidden]),.checkout-actions a {color:#b3261e;}
+.payment-receipt[data-state="captured"] .payment-receipt-status {color:#191919!important;}
+
+/* Applied changes remain visible beside the current amount at every width. */
+.network-amended {display:block;margin:10px 0 0;padding:5px 0;border:0;background:transparent;color:#b3261e;font:600 12px/1.5 Arial,sans-serif;text-align:left;text-decoration:underline;text-underline-offset:3px;}
+.network-amended:hover {background:transparent;color:#8b1b15;}
+.network-amended:focus-visible {outline:2px solid #b3261e;outline-offset:3px;}
+
+/* PACT's working identity: cobalt commitments, an ink delivery desk, readable source. */
+@font-face {font-family:"Manrope";font-style:normal;font-weight:200 800;font-display:swap;src:url("/vendor/manrope/Manrope.ttf") format("truetype");}
+:root {--ink:#18243f;--muted:#5d6b86;--paper:#f0f3fa;--panel:#fff;--line:#d9e1ee;--accent:#3156d9;--accent-soft:#e8edff;--green:#17654e;--green2:#dff4eb;--rust:#ae3445;--rust2:#fff0f2;--shadow:0 10px 32px #18243f0b;font-family:"Manrope",ui-sans-serif,system-ui,sans-serif;}
+body {background:var(--paper);color:var(--ink);font-family:"Manrope",ui-sans-serif,system-ui,sans-serif;}
+body h1,body h2,body h3,body button,body input,body select,body textarea {font-family:"Manrope",ui-sans-serif,system-ui,sans-serif;}
+body a {text-underline-offset:3px;}
+body button {border-radius:7px;border-color:transparent;background:#e9eef8;font-weight:700;transition:background .15s,color .15s;}
+body button:hover {background:#dce5f6;}
+body button.primary {background:var(--accent);border-color:var(--accent);color:#fff;}
+body button.primary:hover {background:#2445bd;}
+body button:focus-visible,body input:focus-visible,body textarea:focus-visible,body select:focus-visible {outline:3px solid #7190ff;outline-offset:3px;}
+body input,body textarea,body select {border:1px solid #bfcbe0;border-radius:7px;color:var(--ink);}
+body dialog {border-color:#d2dced;border-radius:12px;box-shadow:0 24px 80px #15203e38;}
+body dialog::backdrop {background:#101c3a88;}
+body .masthead {max-width:none;padding:15px max(32px,calc((100vw - 1536px)/2));background:#13203c;border:0;color:white;}
+body .product-identity {align-items:center;gap:16px;}
+body .product-identity h1 {display:flex;align-items:center;gap:12px;font:800 27px/1 "Manrope",sans-serif;letter-spacing:-.9px;color:#fff;}
+body .product-identity h1::before,body.shared-review .shared-header strong::before {content:"";width:23px;height:25px;background:#91a7ff;clip-path:polygon(0 0,64% 0,64% 30%,100% 30%,100% 100%,36% 100%,36% 70%,0 70%);}
+body .product-identity span {color:#b6c3df;font-size:11px;font-weight:500;}
+body .environment-badge {color:#c1cde5;border:1px solid #425170;border-radius:4px;padding:3px 7px;font-size:10px;letter-spacing:.04em;}
+body main {padding-top:0;}
+body .project-bar {background:transparent;padding:19px 0 14px;}
+body .project-bar h2 {font-size:21px;letter-spacing:-.7px;font-weight:800;color:#18243f;}
+body .project-bar #project-meta {color:#5d6b86;font-size:12px;margin-top:3px;}
+body .sample-label {color:#64738f;background:#e2e8f4;padding:2px 6px;border-radius:4px;font-size:9px;}
+body .project-files button,body .project-more > summary {background:#e4eaf5;border:0;border-radius:6px;color:#334665;font-weight:700;}
+body .project-files button:hover {background:#d4def0;}
+body .workspace-navigation {gap:5px;padding:0 0 12px;border:0;}
+body .workspace-navigation button {padding:9px 16px;border-radius:7px;font-size:13px;color:#53627e;background:transparent;box-shadow:none;}
+body .workspace-navigation button[aria-current] {background:var(--accent);color:#fff;box-shadow:0 3px 9px #3156d927;}
+body .workspace-navigation button:hover {background:#dde5f5;color:#233f9e;}
+body .workspace-navigation button[aria-current]:hover {background:#2445bd;color:white;}
+body .network-heading {background:transparent;padding:7px 0;}
+body .network-title button,body .network-link,body .delivery-back {color:var(--accent);}
+body .network-reading-tools,body .network-search-tools {background:transparent;border-color:#d4deee;}
+body .network-summary,body .network-search-tools > summary {color:#60708e;}
+body .network-layout {background:transparent;gap:20px;grid-template-columns:minmax(175px,.65fr) minmax(340px,1.7fr) minmax(280px,1.05fr);padding-top:18px;}
+body .network-canvas {padding:0;}
+body .network-entry {background:transparent;}
+body .network-entry__button {border:0;border-radius:9px;background:transparent;padding:16px 14px;}
+body .network-entry__button:hover {background:#e3eaf7;}
+body .network-entry__button[aria-pressed=true] {background:var(--accent);color:white;box-shadow:0 5px 14px #3156d91c;border-color:transparent;}
+body .network-entry__number {font-family:"Manrope",sans-serif;font-size:10px;font-weight:800;color:#667b9f;letter-spacing:.08em;}
+body .network-entry__source .network-entry__title {font-size:14px;font-weight:800;line-height:1.4;letter-spacing:-.2px;}
+body .network-entry__sub {font:600 12px/1.6 "Manrope",sans-serif;font-variant-numeric:tabular-nums;color:#354868;}
+body .network-entry__button[aria-pressed=true] .network-entry__number,body .network-entry__button[aria-pressed=true] .network-entry__sub,body .network-entry__button[aria-pressed=true] .network-entry__status {color:#e4ebff!important;}
+body .network-entry__requires {padding:10px 14px 18px;color:#657491;}
+body .contract-document {padding:28px 30px 50px;background:#fff;border:1px solid #dce3ee;border-radius:12px;box-shadow:0 5px 20px #17284d05;}
+body .contract-document header {border-color:#d9e2f0;padding-bottom:22px;margin-bottom:23px;}
+body .contract-document__caption {color:#7282a0;font:700 10px/1.4 "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.13em;}
+body .contract-document h2 {font:800 28px/1.25 "Manrope",sans-serif;letter-spacing:-1px;color:#1c2a48;}
+body .contract-document__parties {font:500 11px/1.7 "Manrope",sans-serif;color:#697a98;}
+body .contract-document__body {font:17px/1.85 "Source Serif 4",Georgia,serif;color:#26324b;}
+body .contract-clause__number {font:700 10px/1.5 "Manrope",sans-serif;letter-spacing:.12em;color:#91a0b8;}
+body .contract-citation {border-bottom-color:#bcc9e5;}
+body .contract-citation:hover {background:#edf1ff;}
+body .contract-citation[aria-pressed=true] {background:#e8edff;border-bottom-color:#3156d9;color:#223969;}
+body .contract-citation:focus-visible {outline-color:#3156d9;}
+body .contract-citation[aria-haspopup]::after {color:#3156d9;border-color:#a7b8ed;background:#f4f6ff;border-radius:3px;}
+body .network-inspector {background:#182642;color:#f4f7ff;border:0;border-radius:12px;padding:26px 24px;box-shadow:0 8px 24px #14223d0c;}
+body .network-inspector h3 {font:800 21px/1.35 "Manrope",sans-serif;letter-spacing:-.5px;color:white;}
+body .network-selection {color:#aabce8;font:700 10px/1.5 "Manrope",sans-serif;letter-spacing:.11em;text-transform:uppercase;}
+body .network-inspector__amount {color:#fff;font:700 32px/1.3 "Manrope",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-1px;}
+body .network-inspector__amount span {color:#a4b4d2;font:500 10px/1.5 "Manrope",sans-serif;letter-spacing:.03em;}
+body .network-inspector__state {border:0;background:#2c3c5c;color:#e0e8fc!important;border-radius:4px;padding:5px 9px;font:700 10px/1.5 "Manrope",sans-serif;}
+body .network-delivery {background:transparent;border-top:1px solid #425373;padding-top:18px;}
+body .network-delivery .network-evidence-heading h4 {color:#a9badb;font:600 11px/1.5 "Manrope",sans-serif;}
+body .network-delivery .network-inspector__evidence p,body .network-inspector .network-inspector__evidence strong {color:#f3f6ff;}
+body .network-inspector .network-link,body .network-inspector a,body .network-inspector .network-amended {color:#c4d2ff;}
+body .network-inspector .network-inspector__evidence .network-link {background:#d9e3ff;color:#192a51;border:0;border-radius:7px;padding:10px 15px;font:800 12px/1.5 "Manrope",sans-serif;}
+body .network-inspector .network-inspector__evidence .network-link:hover {background:#f0f4ff;}
+body .network-inspector .network-source-version,body .network-inspector .network-inspector__note,body .network-inspector .network-deadline,body .network-inspector .network-inspector__evidence small,body .network-inspector .network-related__state,body .network-inspector .network-terms {color:#aabbd9;}
+body .network-inspector__quote {color:#edf2ff;border-left-color:#8ca5ee;font:15px/1.7 "Source Serif 4",Georgia,serif;}
+body .network-inspector__meta dt {color:#aabbd9;}
+body .network-inspector__meta dd {color:#eef3ff;}
+body .network-inspector__blockers {border-color:#6a5c3e;background:#3a3540;color:#f4dba0;}
+body .contract-obligation-choices {background:#edf2ff;border-color:#b5c5ee;color:#203359;border-radius:8px;font-family:"Manrope",sans-serif;}
+body .contract-obligation-choices [data-contract-choice][aria-pressed=true] {color:#3156d9;}
+body .contract-obligation-choices [data-contract-choice]:hover {background:#dee7ff;}
+body .panel,body .checkout-sheet,body .proposal-sheet {background:#fff;border-color:#d7e0ef;border-radius:12px;}
+body #setup {margin-top:28px;padding:28px;}
+body #setup h2 {font-size:27px;letter-spacing:-.8px;}
+body .payment-receipt-amount {font:800 42px/1.2 "Manrope",sans-serif;letter-spacing:-1.8px;color:#1b2a49;font-variant-numeric:tabular-nums;}
+body .payment-currency {font-family:"Manrope",sans-serif;color:#72809a;}
+body .checkout-proof {background:#f1f5fe;border-color:#3156d9;}
+body .proposal-sheet > button,body #pay-prepare:not([hidden]),body #pay-capture:not([hidden]),body #pay-approval:not([hidden]) {background:#3156d9;border-color:#3156d9;border-radius:7px;color:#fff;}
+body #pay-restore:not([hidden]),body .checkout-actions a {color:#3156d9;}
+body .shared-owner .shared-saved-title {font:800 18px/1.4 "Manrope",sans-serif;letter-spacing:-.35px;}
+body .shared-owner .shared-saved-excerpt {font-family:"Source Serif 4",Georgia,serif;}
+body .organizer-entry {background:white;border:1px solid #d7e0ef;border-radius:14px;padding:32px;box-shadow:0 12px 40px #15274b0a;}
+body .organizer-entry .entry-rule {height:5px;width:40px;background:#3156d9;border-radius:4px;}
+body .organizer-entry h2 {font:800 31px/1.2 "Manrope",sans-serif;letter-spacing:-1px;color:#1b2948;}
+body .organizer-entry button.primary {background:#3156d9;border-color:#3156d9;border-radius:7px;}
+body.shared-review {background:#f0f3fa;color:#18243f;}
+body.shared-review .shared-header {background:#13203c;color:white;border:0;padding:18px 32px;}
+body.shared-review .shared-header strong {font:800 27px/1 "Manrope",sans-serif;letter-spacing:-.9px;color:white;}
+body.shared-review .shared-header span {color:#becbe4;font:500 12px/1.5 "Manrope",sans-serif;}
+body.shared-review main {margin:26px auto;background:white;border:1px solid #d9e2f0;border-radius:14px;padding:30px 34px 42px;}
+body.shared-review h1 {font:800 32px/1.2 "Manrope",sans-serif;letter-spacing:-1px;color:#1c2b4a;}
+body.shared-review .shared-project {font-family:"Manrope",sans-serif;color:#687b9b;}
+body.shared-review .shared-amount {font:700 17px/1.5 "Manrope",sans-serif;color:#3156d9;font-variant-numeric:tabular-nums;}
+body.shared-review .shared-proof {border-top:2px solid #3156d9;background:white;}
+body.shared-review .shared-proof h2 {font:800 21px/1.3 "Manrope",sans-serif;letter-spacing:-.5px;color:#1a2a49;}
+body.shared-review .shared-clause {border-color:#d6dfef;}
+body.shared-review .shared-clause blockquote {border-color:#3156d9;background:#f1f5ff;color:#283857;}
+body.shared-review .shared-decision {background:#e9efff;color:#3156d9;border:0;border-radius:4px;padding:5px 8px;font-family:"Manrope",sans-serif;}
+body.shared-review button.primary {background:#3156d9;border-color:#3156d9;color:white;}
+body.shared-review button {border-radius:7px;font-family:"Manrope",sans-serif;}
+body.shared-review .shared-proof a.shared-reference {color:#3156d9;}
+body.shared-review .delivery-preview {background:#edf1f8;border-radius:9px;}
+body.shared-review .shared-proposals,body.shared-review .shared-proposal-effects {border-color:#d7e0f1;border-left-color:#3156d9;border-radius:7px;}
+body .delivery-image-dialog {background:#13203c;}
+body .delivery-image-tools {background:#f5f7fc;color:#223353;}
+@media(max-width:1100px) and (min-width:801px) {
+ body .network-layout {grid-template-columns:160px minmax(280px,1fr) 270px;gap:14px;}
+ body .contract-document {padding:24px 22px 40px;}
+ body .contract-document h2 {font-size:25px;}
+ body .network-inspector {padding:22px 18px;}
+ body .network-inspector h3 {font-size:19px;}
+}
+@media(max-width:800px) {
+ body .masthead {padding:13px 18px;}
+ body .product-identity h1 {font-size:24px;gap:9px;}
+ body .product-identity h1::before {width:18px;height:21px;}
+ body main {padding-left:14px;padding-right:14px;}
+ body .project-bar {padding:14px 0 10px;}
+ body .project-bar h2 {font-size:16px;letter-spacing:-.35px;}
+ body .project-bar #project-meta {font-size:10px;}
+ body .workspace-navigation {gap:4px;padding-bottom:6px;}
+ body .workspace-navigation button {font-size:11px;padding:9px 11px;}
+ body .network-layout {display:flex;gap:14px;padding-top:10px;}
+ body .network-rows {gap:8px;border:0;}
+ body .network-entry {border-radius:8px;background:#e5ebf6!important;}
+ body .network-entry:has([aria-pressed=true]) {background:#3156d9!important;}
+ body .network-entry__button {min-height:80px;padding:10px 12px;}
+ body .network-entry__source .network-entry__title {font-size:12px;}
+ body .network-entry__button[aria-pressed=true] {box-shadow:none;}
+ body .network-entry__review {padding:0 12px 10px;background:transparent!important;}
+ body .network-entry:has([aria-pressed=true]) .network-entry__review {background:transparent!important;}
+ body .network-entry__review button {padding:6px 10px;border:0;background:#f5f7fe;color:#2543a3;font-size:11px;}
+ body .contract-document {padding:22px 15px 18px;border:1px solid #dbe3ef;}
+ body .contract-document h2 {font-size:24px;letter-spacing:-.7px;}
+ body .contract-document__body {font-size:16px;line-height:1.8;}
+ body .contract-document__body > .network-inspector {margin:0 -4px 22px;padding:18px 16px;background:#182642;border:0;border-radius:10px;font:14px/1.5 "Manrope",sans-serif;color:#f4f7ff;}
+ body .network-inspector h3 {font-size:19px;}
+ body .network-inspector__amount {font-size:28px;}
+ body .network-inspector .network-inspector__amount {margin-top:10px;}
+ body .network-inspector .network-delivery {padding-top:14px;}
+ body #setup {padding:20px 16px;margin-top:18px;}
+}
+@media(max-width:500px) {
+ body .product-identity span {display:none;}
+ body .organizer-entry {margin:34px 16px;max-width:none;padding:24px;}
+ body .organizer-entry h2 {font-size:28px;}
+ body.shared-review .shared-header {padding:16px 18px;}
+ body.shared-review main {margin:0;border:0;border-radius:0;padding:14px 18px 40px;}
+ body.shared-review h1 {font-size:27px;}
+ body.shared-review .shared-proof {padding:14px;}
+ body.shared-review .shared-proof h2 {font-size:18px;}
+}
+
+/* Keep secondary text and the next review action legible on the ink panel. */
+body a {color:#3156d9;}
+body .network-heading .network-title button {color:#3156d9;}
+body .network-inspector .network-terms summary,body .network-inspector .network-related__title,body .network-inspector .network-related__state {color:#bbc9e4;}
+body .network-inspector .network-inspector__evidence .network-link {display:block;width:100%;min-height:44px;text-align:center;font-size:13px;padding:12px 15px;}
+body .network-rows {scrollbar-width:thin;scrollbar-color:#b9c7e8 transparent;}
+body .network-rows::-webkit-scrollbar {height:4px;}
+body .network-rows::-webkit-scrollbar-thumb {background:#b9c7e8;border-radius:4px;}
+
+body.shared-review .shared-header strong {display:flex;align-items:center;gap:12px;}
+@media(max-width:500px) {body.shared-review .shared-proof > .shared-decision {float:right;margin:1px 0 8px 10px;}body.shared-review .shared-proof > .file-compact {clear:both;}}
+
+/* Keep the evaluated payment action in the installed cobalt hierarchy. */
+body .network-inspector .network-action--payment {background:var(--accent);border-color:var(--accent);color:#fff;}
+
+.source-wording-tools,.source-wording-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:12px 0}
+.source-wording-nav{position:sticky;top:0;background:#fff;padding:10px 0;z-index:1;border-bottom:1px solid #cbd3e2}
+.source-wording-nav output{margin-right:auto}
+.source-wording-result summary{padding:12px 0;cursor:pointer;font-weight:700}
+.source-wording-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.source-wording-columns>div{min-width:0}
+.source-wording-columns h3{font:700 13px/1.4 "Manrope",sans-serif}
+.source-wording-text{white-space:break-spaces;overflow-wrap:anywhere;font:15px/1.6 "Source Serif 4",serif}
+.source-wording-text del{background:#ffe6df;color:#70271a;text-decoration:line-through}
+.source-wording-text ins{background:#dff2e5;color:#18442b;text-decoration:underline}
+.source-wording-text .source-wording-active{outline:2px solid #3156d9;outline-offset:2px}
+@media(max-width:650px){.source-wording-columns{grid-template-columns:1fr}.source-wording-nav{position:static}}
+
+.source-wording-result{scroll-margin-top:100px}
+.source-wording-changes{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.source-wording-change{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px;border:1px solid #cbd3e2;border-radius:3px;scroll-margin-top:120px}
+.source-wording-change>div{min-width:0}
+.source-wording-change h3{font:700 12px/1.4 "Manrope",sans-serif;margin:0 0 8px}
+.source-wording-excerpt{white-space:break-spaces;overflow-wrap:anywhere;font:15px/1.6 "Source Serif 4",serif;margin:0}
+.source-wording-excerpt del{background:#ffe6df;color:#70271a}
+.source-wording-excerpt ins{background:#dff2e5;color:#18442b}
+.source-wording-change.source-wording-active{outline:2px solid #3156d9;outline-offset:2px}
+body.shared-review .source-wording-nav{top:76px}
+@media(max-width:650px){.source-wording-change{grid-template-columns:1fr;gap:12px}.source-wording-result{scroll-margin-top:125px}}
+
+@media(max-width:650px){
+ .source-wording-nav{display:grid;grid-template-columns:1fr 1fr}
+ .source-wording-nav output{margin:0;text-align:right}
+ .source-wording-nav button{width:100%}
+}
+
+.citation-paragraph.citation-table-rows,.contract-clause.citation-table-rows,body.shared-review .shared-source-body .contract-clause.citation-table-rows { white-space:pre-line; }
+
+.citation-table-rows .citation-table-markup{font-size:0;line-height:0}.citation-table-rows .citation-table-cell{white-space:normal;padding-right:.8em}.citation-table-rows .citation-table-break{display:block;height:0;white-space:normal;border-bottom:1px solid #e1e5eb;margin:.3em 0}.citation-table-rows .citation-table-cell:empty{display:none}
+
+.citation-table-multiline:has(>.citation-table-cell){display:grid!important;grid-template-columns:minmax(7em,1fr) minmax(0,1.45fr);column-gap:1em;align-items:start}.citation-table-multiline>.citation-table-markup{display:none}.citation-table-multiline>.citation-table-cell{min-width:0;padding-right:0}.citation-table-multiline:has(>.citation-table-cell):not(:has(>.citation-table-cell~.citation-table-cell)){grid-template-columns:minmax(0,1fr)}
+.citation-cell-break{display:block;height:0;margin:.65rem 0;font-size:0;line-height:0}
+
+.obligation-network[data-empty="true"] .network-layout{max-width:1000px;margin-inline:auto}
+.obligation-network[data-empty="true"] .network-canvas{position:static;padding:12px 0}
+
+.contract-source-selection{position:fixed;z-index:30;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 14px;width:max-content;max-width:calc(100vw - 32px);box-sizing:border-box;padding:12px 16px;border:1px solid var(--line,#bcc6d4);border-radius:8px;background:#fff;box-shadow:0 8px 30px #17274830;color:var(--ink,#18251f)}
+.contract-source-selection[hidden]{display:none}
+.contract-source-selection button{min-height:42px}
+.contract-source-selection>span{font-size:13px}
+@media(max-width:500px){.contract-source-selection{bottom:12px;gap:6px 10px;padding:10px 12px}.contract-source-selection>span{width:100%;text-align:center}}
+
+.contract-clause.citation-table-multiline>.contract-clause__number{grid-column:1 / -1}
+@media(max-width:600px){.contract-clause.citation-table-multiline:has(>.citation-table-cell),.citation-paragraph.citation-table-multiline:has(>.citation-table-cell){grid-template-columns:minmax(0,1fr);row-gap:10px}}
+
+.contract-reader-search{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:12px 0;background:#fff;border-bottom:1px solid #d6dfee;margin-bottom:22px}
+.contract-reader-search input{min-width:0;flex:1;margin:0;font:inherit}
+.contract-reader-search button{min-height:40px;padding:8px 12px;white-space:nowrap}
+.contract-reader-search [role=status]{font-size:12px;white-space:nowrap}
+.contract-search-paragraph{outline:2px solid #d9b750;outline-offset:7px}
+::highlight(pact-reader-search){background:#ffe288;color:#182d47}
+@media(max-width:600px){.contract-reader-search{flex-wrap:wrap;gap:6px;padding:8px 0}.contract-reader-search input{flex-basis:100%}.contract-reader-search [role=status]{margin-right:auto}}
+
+.contract-reader-search .contract-reader-return {grid-column:1/-1;justify-self:start;font-size:13px;}
+
+.contract-document .contract-reference-focus {background:#e7edff;color:inherit;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.contract-document .contract-reference-focus:focus-visible {outline:2px solid #3156d9;outline-offset:3px;}
+
+/* Extracted layout tabs remain in the source nodes, not as gaps inside prose. */
+.contract-document .contract-clause.citation-paragraph:not(.citation-table-rows):not(.citation-rate-rows) {white-space:pre-line;}
+.contract-document .contract-clause.citation-paragraph:not(.citation-table-rows):not(.citation-rate-rows) .contract-citation {white-space:inherit;}
+
+/* Explicit source relationships stay beside the passage being read. */
+.contract-reader-related {margin:0 0 24px;padding:14px 16px;border-left:2px solid #a4bbc8;background:#f5f8fa;font:13px/1.5 Arial,Helvetica,sans-serif;white-space:normal;}
+.contract-reader-related > p {margin:0 0 10px;font-weight:700;}
+.contract-reader-related .source-references {display:flex;flex-wrap:wrap;gap:8px;}
+.contract-reader-related button {font:inherit;text-align:left;white-space:normal;}
+.contract-reader-related > button {display:block;margin:12px 0 0 auto;border:0;background:transparent;color:#686868;}
+
+/* Draft captures remain distinct from the larger provision being read. */
+.contract-draft-key {font:12px/1.4 Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;gap:7px;color:#684c17;}
+.contract-draft-key::before {content:"";display:inline-block;width:16px;height:12px;background:#fff0c4;border-bottom:2px solid #a77c20;}
+.contract-draft-key[hidden] {display:none;}
+.contract-draft-capture {background:#fff0c4;color:#191919;border-bottom:2px solid #a77c20;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+
+.contract-reader-related > [data-reader-capture="provision"] {margin:0 0 18px;padding:12px 16px;border:1px solid #a4bbc8;background:#e7edf5;color:#18314c;font-weight:700;min-height:44px;width:100%;max-width:360px;text-align:center;border-radius:6px;}
+.contract-reader-related > [data-reader-capture="provision"][hidden] {display:none;}
+
+.source-wording-search{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin:12px 0}
+.source-wording-search label{display:grid;gap:6px;flex:1 1 240px;font-size:14px}
+.source-wording-search input{width:100%;min-width:0}
+.source-wording-change[hidden]{display:none}
+
+.source-wording-whitespace{font:600 12px/1.5 Manrope,sans-serif;color:#53617a;margin:0 0 8px}
+
+/* Recorded conditions retain their full width and source passages stay reachable. */
+body .network-inspector,body .network-condition,body .network-passage {scroll-margin-top:120px;}
+body .network-condition {margin:0 0 20px;border-top:1px solid #52617c;border-bottom:1px solid #52617c;}
+body .network-condition > summary,body .network-passage > summary {cursor:pointer;padding:14px 0;min-height:44px;color:#edf2ff;font-weight:700;}
+body .network-condition__text {white-space:pre-wrap;overflow-wrap:anywhere;font:16px/1.7 "Manrope",sans-serif;color:#f4f7ff;padding:0 0 18px;}
+body .network-inspector .network-passage .network-inspector__quote {display:block;}
+body .network-passage {border-bottom:1px solid #52617c;}
+body .network-passage .citation-excerpt {margin:0 0 16px;}
+
+body .network-passage__heading {overflow-wrap:anywhere;}
+body .network-passage__number {display:block;margin-top:4px;color:#bbc9e4;font-size:12px;font-weight:500;}
+
+body .network-inspector .citation-location {color:#bbc9e4;}

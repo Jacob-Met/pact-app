@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PACT — Open workspace</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/contract-document.css"><link rel="stylesheet" href="/organizer-signin.css"></head>
+<body><header class="masthead"><div class="product-identity"><h1>PACT</h1><span>Agreement workspace</span></div><span class="environment-badge">Sandbox</span></header>
+<main class="organizer-entry"><div class="entry-rule"></div>
+<section id="signin-entry"><h2>Open your workspace</h2>
+<form id="account-signin" hidden><label for="account-username">Username</label><input id="account-username" name="username" autocomplete="username" required maxlength="64">
+<label for="account-password">Password</label><input id="account-password" name="password" type="password" autocomplete="current-password" required><button class="primary" type="submit">Sign in</button><button id="recover-open" class="entry-link" type="button">Use a recovery code</button></form>
+<details id="installation-entry" open><summary>Installation access</summary><form id="organizer-signin" method="post" action="/organizer/login"><label for="organizer-code">Organizer access code</label><input id="organizer-code" name="code" type="password" required autocomplete="current-password"><button class="primary" type="submit" disabled>Open workspace</button></form></details>
+<p class="entry-invitation">Reviewing a delivery? Open your invitation link.</p></section>
+<section id="enroll-entry" hidden><h2 id="enroll-heading">Set up organizer access</h2><p id="enroll-name"></p><form id="account-enroll">
+<label for="enroll-username">Choose a username</label><input id="enroll-username" name="username" autocomplete="username" required minlength="3" maxlength="64" pattern="[a-zA-Z0-9][a-zA-Z0-9._-]{2,63}">
+<label for="enroll-password">Choose a password</label><input id="enroll-password" name="password" type="password" autocomplete="new-password" required minlength="15" maxlength="256" aria-describedby="enroll-password-help"><p id="enroll-password-help" class="entry-help">Use at least 15 characters. Several unrelated words work well.</p>
+<label for="enroll-confirm">Repeat password</label><input id="enroll-confirm" name="confirm" type="password" autocomplete="new-password" required><button class="primary" type="submit">Activate organizer access</button></form><a href="/">Already activated? Sign in</a></section>
+<section id="recover-entry" hidden><h2>Recover your access</h2><form id="account-recover">
+<label for="recover-username">Username</label><input id="recover-username" name="username" autocomplete="username" required maxlength="64">
+<label for="recover-code">Saved recovery code</label><input id="recover-code" name="recoveryCode" autocomplete="off" required spellcheck="false">
+<label for="recover-password">New password</label><input id="recover-password" name="password" type="password" autocomplete="new-password" required minlength="15" maxlength="256">
+<label for="recover-confirm">Repeat new password</label><input id="recover-confirm" name="confirm" type="password" autocomplete="new-password" required><button class="primary" type="submit">Recover access</button><button id="recover-cancel" class="entry-link" type="button">Back to sign in</button></form></section>
+<section id="recovery-saved" hidden><h2>Keep your recovery code</h2><p id="recovery-identity"></p><p>This code can replace a forgotten password. Save it somewhere private.</p><code id="recovery-value"></code><div class="actions"><button id="recovery-download" class="primary" type="button">Save recovery code</button><button id="recovery-continue" type="button">Open workspace</button></div></section>
+<p id="organizer-message" role="status" aria-live="polite"></p></main><script type="module" src="/organizer-signin.mjs"></script></body></html>

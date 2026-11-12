@@ -1,0 +1,126 @@
+{
+  "format": "pact-local-obligations/v1",
+  "id": "project-1794334484011",
+  "title": "Morrow Sound · Podcast production",
+  "currency": "USD",
+  "budgetMinor": 127550,
+  "source": {
+    "id": "source-1",
+    "revision": 1,
+    "text": "Morrow Sound will deliver a theme and stems for USD 425.50. Juniper Press must accept the WAV masters after checking no clipping. After theme acceptance, Morrow Sound will deliver four episode edits for USD 850.00. Approval of a preview is not acceptance of final masters."
+  },
+  "parties": [
+    {
+      "id": "party-a",
+      "name": "Morrow Sound"
+    },
+    {
+      "id": "party-b",
+      "name": "Juniper Press"
+    }
+  ],
+  "createdAt": "2026-11-10T18:14:44.011Z",
+  "events": [
+    {
+      "id": "event-1-1794334484030",
+      "seq": 1,
+      "at": "2026-11-10T18:14:44.030Z",
+      "actorId": "party-a",
+      "type": "obligation.added",
+      "payload": {
+        "obligation": {
+          "id": "obligation-1-1794334484030",
+          "revision": 1,
+          "title": "Final theme masters",
+          "criterion": "WAV masters and stems have no clipped samples",
+          "citation": {
+            "sourceId": "source-1",
+            "sourceRevision": 1,
+            "start": 60,
+            "end": 129,
+            "quote": "Juniper Press must accept the WAV masters after checking no clipping."
+          },
+          "performerId": "party-a",
+          "reviewerId": "party-b",
+          "dependsOn": [],
+          "dueAt": null,
+          "amountMinor": 42550
+        }
+      }
+    },
+    {
+      "id": "event-2-1794334484038",
+      "seq": 2,
+      "at": "2026-11-10T18:14:44.038Z",
+      "actorId": "party-a",
+      "type": "obligation.added",
+      "payload": {
+        "obligation": {
+          "id": "obligation-2-1794334484038",
+          "revision": 1,
+          "title": "Four episode edits",
+          "criterion": "Four episode WAV files approved after first theme",
+          "citation": {
+            "sourceId": "source-1",
+            "sourceRevision": 1,
+            "start": 130,
+            "end": 214,
+            "quote": "After theme acceptance, Morrow Sound will deliver four episode edits for USD 850.00."
+          },
+          "performerId": "party-a",
+          "reviewerId": "party-b",
+          "dependsOn": [
+            "obligation-1-1794334484030"
+          ],
+          "dueAt": null,
+          "amountMinor": 85000
+        }
+      }
+    },
+    {
+      "id": "event-3-1794334484042",
+      "seq": 3,
+      "at": "2026-11-10T18:14:44.042Z",
+      "actorId": "party-a",
+      "type": "evidence.submitted",
+      "payload": {
+        "evidence": {
+          "id": "evidence-3-1794334484042",
+          "obligationId": "obligation-2-1794334484038",
+          "obligationRevision": 1,
+          "submittedBy": "party-a",
+          "description": "Four final episode WAV files delivered.",
+          "reference": "Delivery email 2026-11-10"
+        }
+      }
+    },
+    {
+      "id": "event-4-1794334484048",
+      "seq": 4,
+      "at": "2026-11-10T18:14:44.060Z",
+      "actorId": "party-b",
+      "type": "evidence.accepted",
+      "payload": {
+        "evidenceId": "evidence-3-1794334484042",
+        "rationale": "Criterion checked against final delivery"
+      }
+    },
+    {
+      "id": "event-5-1794334484146",
+      "seq": 5,
+      "at": "2026-11-10T18:14:44.146Z",
+      "actorId": "party-a",
+      "type": "evidence.submitted",
+      "payload": {
+        "evidence": {
+          "id": "evidence-5-1794334484146",
+          "obligationId": "obligation-1-1794334484030",
+          "obligationRevision": 1,
+          "submittedBy": "party-a",
+          "description": "Preview MP3 only. Final WAV masters and stems are missing.",
+          "reference": "Delivery email 2026-11-10"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PACT — Agreement workspace</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/commitment-search.css">
+  <link rel="stylesheet" href="/audit-trail.css">
+  <link rel="stylesheet" href="/decision-review.css">
+  <link rel="stylesheet" href="/authoring.css">
+  <link rel="stylesheet" href="/proposal-source-review.css">
+  <link rel="stylesheet" href="/amendment.css">
+  <link rel="stylesheet" href="/workspace-views.css">
+  <link rel="stylesheet" href="/contract-document.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workbench</a>
+  <header class="masthead">
+    <div class="product-identity"><h1>PACT</h1><span>Agreement workspace</span></div>
+    <span class="environment-badge">Sandbox</span>
+  </header>
+
+  <main id="main">
+    <p id="recovery-state" class="recovery-note" role="status" aria-live="polite"></p>
+    <div id="error" class="message error" role="alert" tabindex="-1" hidden></div>
+    <div id="status" class="message status" role="status" aria-live="polite" hidden></div>
+
+    <section id="setup" class="panel setup">
+      <div class="section-head"><div><h2>Create an agreement</h2><p>Name the parties and add the agreed text.</p></div></div>
+      <form id="setup-form" class="form-grid">
+        <div class="wide agreement-file-intake">
+          <div class="agreement-file-actions"><button type="button" id="agreement-file-open">Open agreement file</button><span class="muted">PDF · Word · TXT · Markdown</span><button type="button" id="agreement-file-cancel" hidden>Cancel import</button></div>
+          <input type="file" id="agreement-file" accept=".pdf,.docx,.txt,.md,application/pdf,text/plain,text/markdown" hidden>
+          <p id="agreement-file-status" role="status" aria-live="polite"></p>
+          <section id="agreement-file-review" hidden aria-labelledby="agreement-file-heading">
+            <div class="section-head"><div><h3 id="agreement-file-heading">Review imported text</h3><p id="agreement-file-name"></p></div><a id="agreement-file-original" target="_blank" rel="noopener">Open original file</a></div>
+            <div class="agreement-import-find">
+              <label>Find in agreement<input type="search" id="agreement-import-find" autocomplete="off" aria-controls="agreement-import-text" placeholder="A clause, amount or phrase"></label>
+              <div class="agreement-import-find-actions"><button type="button" id="agreement-import-previous" disabled>Previous</button><button type="button" id="agreement-import-next" disabled>Next</button><span id="agreement-import-matches" role="status" aria-live="polite"></span></div>
+            </div>
+            <label>Agreement text<textarea id="agreement-import-text" rows="12" spellcheck="false"></textarea></label>
+            <button type="button" id="agreement-file-use" class="primary">Use this agreement text</button>
+          </section>
+        </div>
+
+        <label>Project title<input name="title" required maxlength="200" placeholder="e.g. Autumn exhibition"></label>
+        <label>Agreement budget (USD)<input name="budget" inputmode="decimal" required placeholder="e.g. 2500.00"></label>
+        <label>First party<input name="performer" required maxlength="120" placeholder="e.g. Cedar Studio"></label>
+        <label>Second party<input name="reviewer" required maxlength="120" placeholder="e.g. Harbor Museum"></label>
+        <label class="wide">Additional parties (optional)<textarea name="additionalParties" rows="2" maxlength="726" aria-describedby="party-guidance" placeholder="One name per line, such as a subcontractor or commissioning partner"></textarea><span id="party-guidance" class="muted">Use one name per line. Name up to eight distinct parties in total. Choose each obligation’s performer and reviewer after creating the project.</span></label>
+        <label class="wide">Agreement source<textarea name="source" required rows="9" placeholder="Paste the agreed text, including delivery requirements, conditions and payment terms."></textarea></label>
+        <div class="wide actions"><button type="submit" class="primary">Open agreement</button><button type="button" data-save-workspace>Save workspace</button><button type="button" id="import-open">Open saved file</button><input id="import-file" type="file" accept="application/json,.json" hidden></div>
+      </form>
+    </section>
+
+    <section id="workbench" hidden>
+      <div class="project-bar">
+        <div><span id="sample-label" class="sample-label" hidden>Sample agreement</span><h2 id="project-title"></h2><p id="project-meta"></p></div>
+        <div class="actions project-files"><button id="new-agreement">New agreement</button><button data-save-workspace>Save workspace</button><button id="import-open-active">Open saved file…</button><details class="project-more"><summary aria-label="More project actions">More</summary><div class="project-more-actions"><button id="export-review">Download readable review</button><button id="export">Export recorded project</button><p>Recorded events only; unfinished drafts stay in workspace files.</p><button id="reset" class="danger">New project…</button></div></details></div>
+      </div>
+
+      <section id="obligation-network" class="obligation-network" aria-labelledby="network-heading">
+        <header class="network-heading">
+          <div class="network-title"><h2 id="network-heading">Commitments</h2><button id="network-add" type="button">Add from agreement</button></div>
+          <form id="evaluate-form" class="evaluate-row"><details class="evaluation-clock"><summary>Review time</summary><label>Evaluate at (UTC)<input name="asOf" type="datetime-local" step="0.001" required></label></details><button class="primary" type="submit">Evaluate readiness</button></form>
+        </header>
+        <p id="network-state-summary" class="network-summary" role="status">Readiness not evaluated.</p>
+        <div class="network-layout">
+          <div class="network-canvas">
+            <div class="network-columns" aria-hidden="true"><span>Agreement clause</span><span>Evidence</span><span>Readiness</span></div>
+            <ol id="network-rows" class="network-rows"></ol>
+          </div>
+          <aside id="network-inspector" class="network-inspector" aria-live="polite" aria-label="Selected obligation details">
+            <h3>No cited obligation yet</h3>
+          </aside>
+        </div>
+      </section>
+
+      <div class="workspace-grid">
+        <section class="panel source-panel">
+          <div class="section-head"><div><h2 id="authoring-heading">Add a commitment</h2><p>Choose its exact source passage, then name the delivery and reviewer.</p></div></div>
+          <div class="citation-source">
+            <label>Agreement source<textarea id="source-view" rows="11" readonly></textarea></label>
+            <div class="source-custom-selection"><button id="capture" type="button">Use selected text</button><button id="read-complete-agreement" type="button" class="quiet">Read complete agreement</button></div>
+            <div class="source-find">
+              <label for="source-find">Find written words<input id="source-find" type="search" placeholder="e.g. final payment" aria-describedby="source-find-status" autocomplete="off"></label>
+              <div class="actions"><button id="source-find-previous" type="button" disabled>Previous match</button><button id="source-find-next" type="button" disabled>Next match</button></div>
+              <p id="source-find-status" class="muted" role="status" aria-live="polite"></p>
+            </div>
+            <button id="use-source-passage" type="button" hidden disabled>Use this passage</button>
+            <button id="add-source-passage" type="button" class="quiet" hidden disabled>Add to captured passages</button>
+            <blockquote id="source-passage-preview" class="passage-preview" hidden></blockquote>
+            <details id="source-range-picker">
+              <summary>Choose or adjust the range</summary>
+              <div class="source-range-controls">
+                <label for="source-passage">From passage<select id="source-passage" aria-describedby="source-passage-preview"><option value="">Choose a starting passage</option></select></label>
+                <label for="source-passage-end">Through passage<select id="source-passage-end" aria-describedby="source-passage-preview" disabled><option value="">Choose the last passage</option></select></label>
+              </div>
+              <p id="source-passage-count" class="source-range-count" role="status" aria-live="polite"></p>
+              <div class="actions source-extend"><button id="source-include-previous" type="button" disabled>Include previous passage</button><button id="source-include-next" type="button" disabled>Include next passage</button></div>
+            </details>
+            <div class="selection-row"><p id="citation-preview" role="status">No citation selected.</p><button id="undo-source-capture" type="button" class="quiet" hidden>Undo source change</button><details id="citation-details" hidden><summary>Read captured wording</summary><div id="citation-quote" class="passage-preview"></div></details></div>
+          </div>
+          <form id="obligation-form" class="form-grid compact">
+            <input name="citationStart" type="hidden"><input name="citationEnd" type="hidden"><input name="citationQuote" type="hidden"><input name="citationRelated" type="hidden">
+            <label class="wide">Short title<input name="title" required maxlength="160"></label>
+            <label>Simulated amount (USD)<input name="amount" required inputmode="decimal" value="0.00"></label>
+            <label>Performer<select name="performerId" required></select></label>
+            <label>Reviewer<select name="reviewerId" required></select></label>
+            <div class="wide criterion-editor">
+              <div class="criterion-heading"><label id="criterion-label" for="obligation-criterion">Authored completion criterion</label><button id="criterion-mode" type="button" class="quiet" hidden>Read criterion</button></div>
+              <div id="criterion-reading" class="criterion-reading" role="region" aria-labelledby="criterion-label" tabindex="0" hidden></div>
+              <textarea id="obligation-criterion" name="criterion" required rows="3"></textarea>
+            </div>
+            <div class="wide criterion-tools"><button id="copy-source-criterion" type="button">Replace criterion with captured wording</button><button id="undo-criterion-source" type="button" class="quiet" hidden>Undo wording replacement</button></div>
+            <label>Deadline (UTC, optional)<input name="dueAt" type="datetime-local" step="0.001"></label>
+            <fieldset id="dependency-field"><legend>Dependencies (all must be ready)</legend><div id="dependency-options" class="checks"><span class="muted">No earlier obligations yet.</span></div></fieldset>
+            <div class="wide actions"><button type="submit" class="primary">Add cited obligation</button></div>
+          </form>
+        </section>
+
+        <section class="panel evidence-panel">
+          <div class="section-head"><div><h2>Record evidence</h2><p>Evidence notes are authored records; their authenticity is not independently verified.</p></div></div>
+          <form id="evidence-form" class="form-grid compact">
+            <label>Obligation<select name="obligationId" required><option value="">Add an obligation first</option></select></label>
+            <label>Submitted by<select name="submittedBy" required></select></label>
+            <label class="wide">Evidence note<textarea name="description" required rows="3" maxlength="1000" placeholder="Preview URL and review notes were shared."></textarea></label>
+            <label class="wide">Reference label or permitted URL<input name="reference" required maxlength="1000" placeholder="QA packet, section 2"></label>
+            <div class="wide actions"><button type="submit" class="primary">Add unreviewed evidence</button></div>
+          </form>
+          <div id="evidence-list" class="stack empty"><p>No evidence recorded.</p></div>
+        </section>
+      </div>
+
+      <details class="result-panel evaluation-details"><summary>Readiness breakdown and allocation totals</summary>
+        <div id="summary" class="summary" hidden></div>
+        <div id="obligation-list" class="stack empty"><p>Add a cited obligation to begin.</p></div>
+      </details>
+
+
+      <section class="agreement-transition" aria-labelledby="transition-heading">
+        <div class="transition-header">
+          <p class="step">05</p>
+          <div>
+            <p class="eyebrow">From clause to proposed payment</p>
+            <h2 id="transition-heading">Transition desk</h2>
+            <p>Every proposed payout starts at an exact clause. Evidence decisions are locally attributed, never proof of identity, consent or legal authority.</p>
+          </div>
+        </div>
+        <div class="transition-columns">
+          <section class="proposal-sheet" aria-labelledby="model-heading">
+            <h3 id="model-heading">Find a passage</h3>
+            <label for="ai-objective">What do you need to find?</label>
+            <textarea id="ai-objective" rows="3" maxlength="500" placeholder="Which exact words define the acceptance condition?"></textarea>
+            <button type="button" id="ai-suggest">Find passage</button>
+            <button type="button" id="ai-stop" hidden>Stop lookup</button>
+            <p class="transition-state" id="ai-state" role="status"></p>
+            <button type="button" id="ai-manual" hidden>Choose from agreement</button>
+            <div id="ai-review" hidden aria-labelledby="ai-review-title">
+              <div class="source-review-heading">
+                <p id="ai-review-position" role="status"></p>
+                <div class="source-review-tools"><button type="button" id="ai-edit-question">Change question</button><button type="button" id="ai-reset-selection" hidden>Reset selection</button></div>
+              </div>
+              <h4 id="ai-review-title"></h4>
+              <details id="ai-range-picker" class="source-review-range">
+                <summary>Find words or choose start and end</summary>
+                <label for="ai-source-find">Find written words<input id="ai-source-find" type="search" placeholder="e.g. dispute" autocomplete="off" aria-describedby="ai-source-find-status"></label>
+                <div class="actions"><button id="ai-source-find-previous" type="button" disabled>Previous match</button><button id="ai-source-find-next" type="button" disabled>Next match</button></div>
+                <p id="ai-source-find-status" role="status" aria-live="polite"></p>
+                <blockquote id="ai-source-found" class="passage-preview" hidden></blockquote>
+                <button id="ai-source-include-found" type="button" disabled>Include found passage</button>
+                <div class="source-range-controls">
+                  <label for="ai-range-from">Selection starts at<select id="ai-range-from"></select></label>
+                  <label for="ai-range-through">Selection ends at<select id="ai-range-through"></select></label>
+                </div>
+                <p id="ai-range-notice" role="status"></p>
+              </details>
+              <blockquote id="ai-review-context" tabindex="-1" aria-label="Selected passage in the original agreement"><span id="ai-context-start" class="source-context-ellipsis" aria-hidden="true" hidden>…</span><span id="ai-context-before"></span><mark id="ai-review-quote"></mark><span id="ai-context-after"></span><span id="ai-context-end" class="source-context-ellipsis" aria-hidden="true" hidden>…</span></blockquote>
+              <div class="source-context-actions">
+                <button type="button" id="ai-include-previous">Include previous passage</button>
+                <button type="button" id="ai-include-next">Include next passage</button>
+              </div>
+              <div class="actions source-review-actions">
+                <button type="button" id="ai-apply" class="primary">Use selected passage</button>
+                <button type="button" id="ai-keep-draft">Keep my draft</button>
+              </div>
+            </div>
+          </section>
+          <section class="checkout-sheet" aria-labelledby="checkout-heading">
+            <h3 id="checkout-heading">Review a possible transfer</h3>
+            <p id="provider-config" class="muted" role="status">Checking configured providers…</p>
+            <label for="pay-obligation">Cited obligation</label>
+            <select id="pay-obligation"><option value="">Choose an obligation</option></select>
+            <p id="pay-review" class="checkout-proof">Select an exact, source-cited obligation.</p>
+            <label class="acknowledgement"><input type="checkbox" id="pay-acknowledge"><span>I reviewed the cited amount and state. The local evidence record is not authenticated consent. Only sandbox funds are involved.</span></label>
+            <div class="checkout-actions">
+              <button type="button" id="pay-prepare" disabled>Prepare sandbox payer request</button>
+              <button type="button" id="pay-restore" disabled>Restore saved Sandbox request</button>
+              <a id="pay-approval" href="#" rel="noopener noreferrer" target="_blank" hidden>Open payer approval</a>
+              <button type="button" id="pay-status" disabled>Read actual provider state</button>
+              <button type="button" id="pay-capture" disabled>Capture approved sandbox order…</button>
+            </div>
+            <p id="pay-state" class="transition-state" role="status">No sandbox request has been created.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="panel audit-panel">
+        <div class="section-head"><div><h2>Activity</h2><p>Changes, delivery reviews and decisions in this agreement.</p></div></div>
+        <ol id="audit-list" class="audit"><li class="muted">No events yet.</li></ol>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="confirm-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy"><form method="dialog"><h2 id="dialog-title">Replace current project?</h2><p id="dialog-copy"></p><div class="actions"><button id="dialog-save-workspace" type="button" data-save-workspace hidden>Save current workspace</button><button value="cancel">Cancel</button><button id="dialog-confirm" value="confirm" class="danger">Replace current project</button></div></form></dialog>
+  <script type="module" src="/app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.audit-entry { overflow-wrap:anywhere; }
+.audit-action { margin:0; font-size:.78rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase; color:var(--muted); }
+.audit-subject { margin:.15rem 0; font-size:1rem; line-height:1.4; }
+.audit-evidence { margin:.6rem 0 .1rem; }
+.audit-reference { margin:0; font-size:.86rem; color:var(--muted); }
+.audit-reason { margin:.5rem 0; white-space:pre-wrap; }
+.audit-actions { display:flex; flex-wrap:wrap; gap:.25rem 1rem; margin:.4rem 0; }
+.audit-actions button { min-height:44px; text-align:left; }
+.audit-identifiers { margin:.3rem 0; font-size:.8rem; color:var(--muted); }
+.audit-identifiers summary { cursor:pointer; width:fit-content; padding:.3rem 0; }
+.audit-identifiers dl { margin:.4rem 0; display:grid; grid-template-columns:max-content minmax(0,1fr); gap:.2rem .7rem; }
+.audit-identifiers dd { margin:0; font-family:monospace; }
+.audit-return { position:fixed; z-index:20; bottom:1rem; right:1rem; max-width:calc(100vw - 2rem); min-height:44px; box-shadow:0 2px 9px #0003; }
+.audit-entry:focus { outline:2px solid var(--green); outline-offset:4px; }
+
+.dialog-history-review { margin:1rem 0; padding:0; list-style:none; max-height:36vh; overflow-y:auto; border-block:1px solid var(--line); }
+.dialog-history-review li { padding:.8rem 0; }
+.dialog-history-review li + li { border-top:1px solid var(--line); }
+.dialog-history-review .audit-attribution { font-size:.75rem; color:var(--muted); }
