@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { createPactProviders } from "./providers.mjs";
 import { createOrderJournal } from "./order-journal.mjs";
+import { createTalk } from "./talk-server.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "app");
 const assets = new Map([
@@ -78,6 +79,9 @@ const assets = new Map([
 // Dark mode: every stylesheet has a generated .dark.css twin; theme.js switches between them.
 for (const [route, [file, type]] of [...assets]) if (file.endsWith(".css")) assets.set(route.replace(/\.css$/, ".dark.css"), [file.replace(/\.css$/, ".dark.css"), type]);
 assets.set("/theme.js", ["theme.js", "text/javascript; charset=utf-8"]);
+for (const f of ["pact-draft.mjs","pacts.mjs"]) assets.set("/"+f,[f,"text/javascript; charset=utf-8"]);
+assets.set("/pacts.css",["pacts.css","text/css; charset=utf-8"]);
+assets.set("/pacts.dark.css",["pacts.dark.css","text/css; charset=utf-8"]);
 assets.set("/polish.css", ["polish.css", "text/css; charset=utf-8"]);
 
 
@@ -158,11 +162,13 @@ function publicSourceReviewSelection(cause, input) {
 }
 
 export function createPactServer({ providers = createPactProviders(), shared = null, demo = null } = {}) {
+  const talk = createTalk({ demo: Boolean(demo) });
   return createServer(async (request, response) => {
     if (shared && await shared.handleOwner(request, response)) return;
     let pathname;
     try { pathname = new URL(request.url, "http://localhost").pathname; } catch { response.writeHead(400); response.end(); return; }
     if (demo && await demo.handle(request, response, pathname)) return;
+    if (await talk(request, response, pathname)) return;
     if (pathname === "/api/config") {
       if (request.method !== "GET") { json(response, 405, { code: "METHOD_NOT_ALLOWED" }); return; }
       json(response, 200, providers.config()); return;

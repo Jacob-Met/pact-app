@@ -770,3 +770,11 @@ sharedReviewPanel = mountSharedReviews({
 });
 
 mountOrganizerAccess();
+
+// Hook for the Pacts front door (pacts.mjs): it reads and opens the project and records events through the same functions.
+window.pactEngine = {
+  get project() { return project; },
+  open(next) { switchProject(next); },
+  record(type, actorId, payload) { add(type, actorId, payload); lastEvaluation = evaluateProject(project, project.events.at(-1).at); render(); recoveryPanel?.save(); },
+  reveal(target) { revealWorkspaceTarget(target); }
+};

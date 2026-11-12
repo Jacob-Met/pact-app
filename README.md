@@ -22,6 +22,11 @@ npm run demo        # or: node start-pact.mjs --demo
 
 A yellow badge reads "Simulated demo: no real PayPal call". PayPal (OAuth, create order, show order, capture) and the AI passage lookup are answered by small in-process fakes in `demo-mode.mjs`; demo payment records are kept in memory only. The real PayPal Sandbox and model setup is described below.
 
+
+### Talk it through (Pacts)
+
+In the simulated demo choose **Pacts** in the top bar, then **New pact**, **Sample**, **Use this conversation**. Tap any underlined term to see the sentence it came from, type a fix such as "deadline is the 30th", then **Start this pact**. As Maya add a photo of the finished work; switch to Sam, **Release**, then **Pay with PayPal** opens the existing Payments panel. Speech goes to a local speech-to-text service and the draft to a local model when they are running; otherwise a built-in reader is used.
+
 ## What it does
 
 - **Cite the source.** Select words in the agreement and record a commitment against them, with an amount, a performer, a reviewer and a completion criterion.

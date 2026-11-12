@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="/amendment.css"><link data-theme-sheet="dark" rel="stylesheet" href="/amendment.dark.css">
   <link rel="stylesheet" href="/workspace-views.css"><link data-theme-sheet="dark" rel="stylesheet" href="/workspace-views.dark.css">
   <link rel="stylesheet" href="/contract-document.css"><link data-theme-sheet="dark" rel="stylesheet" href="/contract-document.dark.css">
-<link rel="stylesheet" href="/polish.css"><script src="/theme.js"></script></head>
+<link rel="stylesheet" href="/polish.css"><link rel="stylesheet" href="/pacts.css"><link data-theme-sheet="dark" rel="stylesheet" href="/pacts.dark.css"><script src="/theme.js"></script></head>
 <body>
   <a class="skip" href="#main">Skip to workbench</a>
   <header class="masthead">
     <div class="product-identity"><h1>PACT</h1><span>Agreement workspace</span></div>
-    <span class="environment-badge">Sandbox</span>
+    <button type="button" id="pacts-open" class="pacts-open">Pacts</button><span class="environment-badge">Sandbox</span>
   </header>
 
   <main id="main">
@@ -215,5 +215,6 @@
 
   <dialog id="confirm-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy"><form method="dialog"><h2 id="dialog-title">Replace current project?</h2><p id="dialog-copy"></p><div class="actions"><button id="dialog-save-workspace" type="button" data-save-workspace hidden>Save current workspace</button><button value="cancel">Cancel</button><button id="dialog-confirm" value="confirm" class="danger">Replace current project</button></div></form></dialog>
   <script type="module" src="/app.mjs"></script>
+  <script type="module" src="/pacts.mjs"></script>
 </body>
 </html>
