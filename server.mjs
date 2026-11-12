@@ -75,6 +75,10 @@ const assets = new Map([
   ["/tab-recovery.mjs", ["tab-recovery.mjs", "text/javascript; charset=utf-8"]],
   ["/recovery-ui.mjs", ["recovery-ui.mjs", "text/javascript; charset=utf-8"]]
 ]);
+// Dark mode: every stylesheet has a generated .dark.css twin; theme.js switches between them.
+for (const [route, [file, type]] of [...assets]) if (file.endsWith(".css")) assets.set(route.replace(/\.css$/, ".dark.css"), [file.replace(/\.css$/, ".dark.css"), type]);
+assets.set("/theme.js", ["theme.js", "text/javascript; charset=utf-8"]);
+assets.set("/polish.css", ["polish.css", "text/css; charset=utf-8"]);
 
 
 const apiPaths = new Map([

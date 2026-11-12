@@ -1,0 +1,158 @@
+.shared-review{margin:0;background:#1e211a;color:var(--ink,#d2d7d4)}.shared-header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid var(--line);background:#161616}.shared-header strong{font-size:22px}.shared-header span{font-size:14px;font-weight:600}.shared-review main{max-width:780px;margin:0 auto;padding:28px 24px 60px}.shared-project{font-size:14px;color:var(--muted);margin:0 0 18px}.shared-review h1{font-size:32px;line-height:1.15;margin:22px 0 10px}.shared-criterion{font-size:18px;line-height:1.5}.shared-amount{font-size:14px;font-weight:600;color:var(--muted)}.shared-clause{margin:20px 0;border-block:1px solid var(--line);padding:14px 0}.shared-clause blockquote{margin:12px 0;font-family:Georgia,serif;line-height:1.6}.shared-proof{background:#161616;border:1px solid var(--line);padding:22px;margin:20px 0}.shared-proof h2{font-size:20px;margin:0 0 8px}.shared-proof .shared-reference{font-size:14px;color:var(--muted);overflow-wrap:anywhere}.shared-proof label,.shared-delivery label{display:block;margin-top:18px}.shared-proof textarea,.shared-delivery textarea,.shared-delivery input{width:100%;box-sizing:border-box;margin:6px 0 12px}.shared-decision{display:inline-block;font-size:13px;font-weight:700;color:var(--green);margin-bottom:10px}.shared-proof .actions{margin-top:16px}.shared-review button{min-height:44px}.shared-review #shared-message:empty{display:none}.shared-review select{width:100%;min-height:44px}.shared-delivery{margin:28px 0;padding-top:20px;border-top:1px solid var(--line)}#shared-confirm{width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);box-sizing:border-box;overflow:auto}#shared-confirm-body{max-height:48vh;overflow:auto}#shared-confirm-body li{margin-bottom:10px}#shared-confirm-status{color:#e2988d}.shared-owner{width:min(620px,calc(100vw - 32px));box-sizing:border-box;max-height:calc(100vh - 32px);overflow:auto}.shared-owner label{display:block;margin:14px 0 6px}.shared-owner select,.shared-owner input{width:100%;min-height:42px;box-sizing:border-box}.shared-owner .actions{margin:16px 0}.shared-owner-status{color:var(--muted)}.shared-owner .shared-invitation{font-size:13px;word-break:break-all}@media(max-width:500px){.shared-review main{padding:20px 16px 44px}.shared-header{padding:16px}.shared-header span{max-width:65%;text-align:right}.shared-proof{padding:18px}.shared-review h1{font-size:28px}}
+.shared-proof .file-compact{margin:16px 0;padding:14px 0;border:0;border-block:1px solid var(--line);background:transparent}.shared-proof .file-compact h4{font-size:14px;margin:0 0 6px}.shared-proof .file-compact p{font-size:14px;margin:6px 0}.shared-proof .file-compact details{font-size:12px;color:var(--muted)}.shared-proof .file-compact code{display:block;overflow-wrap:anywhere;font-size:11px;margin-top:6px}.shared-proof .file-compact label{margin:10px 0 0}.shared-proof .file-compact input[type=file]{display:block;width:100%;box-sizing:border-box;margin:6px 0}.shared-proof .file-compact [data-match=true]{color:var(--green);font-weight:600}.shared-proof .file-compact [data-match=false]{color:#e2988d;font-weight:600}
+
+.shared-proof .file-compact > details > summary{font-size:14px;font-weight:600;line-height:1.6;overflow-wrap:anywhere;padding:4px 0}.shared-proof .file-compact > details > summary[data-match=true]{color:var(--green)}
+
+.shared-proposals{margin:20px 0;padding:16px;border:1px solid var(--line);background:#161616}.shared-proposals h2{font-size:16px;margin:0 0 12px}.shared-proposals button{display:block;margin:8px 0}.shared-proposal-effects{background:#161616;border:1px solid var(--line);padding:16px 18px;margin:18px 0;line-height:1.5}.shared-proposal-impact{font-weight:650}.shared-all-terms{margin:18px 0}.shared-party-reviews{padding-left:20px;font-size:14px;line-height:1.8}.shared-review #shared-content>label{display:block;margin-top:18px}.shared-review #shared-content>label textarea{display:block;width:100%;box-sizing:border-box;margin:8px 0 16px}
+
+.shared-party-reviews details p{margin:4px 0 10px;color:var(--muted)}.shared-proposal-history{margin:16px 0;font-size:14px}.shared-proposal-history button{display:block;margin:8px 0}.shared-party-reviews summary,.shared-proposal-history summary{cursor:pointer}
+.shared-proof a.shared-reference{display:inline-block;color:#8d9bb0;font-weight:650;padding:8px 0;text-underline-offset:3px}
+
+.shared-saved-agreements{margin:1rem 0;border-block:1px solid #434645;padding:.8rem 0}.shared-saved-row{display:flex;gap:1rem;align-items:center;justify-content:space-between;margin:.75rem 0}.shared-saved-row span{overflow-wrap:anywhere}.shared-saved-row button{flex-shrink:0}
+
+.delivery-preview{margin:18px 0 0;background:#252c27;padding:20px;text-align:center}.delivery-preview img{display:block;max-width:100%;max-height:420px;width:auto;height:auto;margin:auto;box-shadow:0 4px 18px #c5c9c722}.delivery-preview figcaption{font-size:13px;color:var(--muted);margin-top:12px;overflow-wrap:anywhere}@media(max-width:500px){.delivery-preview{padding:12px}.delivery-preview img{max-height:300px}}
+
+@media(min-width:900px){.shared-review main{max-width:1040px}.shared-proof:has(.delivery-preview:not([hidden])){display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:28px;align-items:start}.shared-proof:has(.delivery-preview:not([hidden]))>*{grid-column:2}.shared-proof:has(.delivery-preview:not([hidden]))>.file-compact{grid-column:1;grid-row:1/9;margin:0;border:0;padding:0}.shared-proof:has(.delivery-preview:not([hidden])) .delivery-preview{margin-top:12px}.shared-proof:has(.delivery-preview:not([hidden])) textarea{min-height:120px}}
+
+/* The invited decision belongs to the same annotated agreement. */
+.shared-review {background:#161616;color:#d9d9d9;}
+.shared-header {border-bottom:1px solid #c7c7c7;padding:18px 32px;}
+.shared-header strong {font:800 27px/1 Arial,sans-serif;letter-spacing:-1.5px;}
+.shared-header span {font-size:12px;color:#9e9e9e;}
+.shared-review main {padding-top:28px;}
+.shared-project {font-size:12px;letter-spacing:0;color:#9e9e9e;}
+.shared-review h1 {font:600 34px/1.2 "Source Serif 4",Georgia,serif;letter-spacing:-.5px;}
+.shared-criterion {font:18px/1.75 "Source Serif 4",Georgia,serif;}
+.shared-amount {font:15px/1.5 ui-monospace,monospace;color:#d9d9d9;}
+.shared-clause {padding:20px 0;border-top:1px solid #c7c7c7;border-bottom:1px solid #464544;}
+.shared-clause summary {font-size:12px;color:#9e9e9e;cursor:pointer;}
+.shared-clause blockquote {font:17px/1.8 "Source Serif 4",Georgia,serif;padding:8px 16px;border-left:2px solid #bf4740;background:#402b26;}
+.shared-proof {border:0;border-top:2px solid #bf4740;padding:24px 0;background:#161616;}
+.shared-proof h2 {font:600 22px/1.3 Arial,sans-serif;}
+.shared-decision {border:1px solid #bf4740;padding:4px 7px;color:#eb8a85;font:600 11px/1.4 Arial,sans-serif;}
+.shared-proof a.shared-reference {color:#eb8a85;}
+.shared-proof .file-compact [data-match=true],.shared-proof .file-compact > details > summary[data-match=true] {color:#d9d9d9;}
+.shared-review button.primary {background:#391b19;border-color:#bf4740;}
+.shared-review button {border-radius:2px;}
+.shared-review input:focus-visible,.shared-review textarea:focus-visible {outline-color:#bf4740;}
+.shared-review .delivery-preview {background:#24211f;}
+.shared-review .delivery-preview img {box-shadow:0 3px 18px #c7c7c718;}
+.shared-proposals,.shared-proposal-effects {border-color:#464544;border-left:2px solid #bf4740;}
+.shared-delivery {border-top:1px solid #c7c7c7;}
+@media(max-width:500px) {
+ .shared-header {padding:16px 18px;}
+ .shared-review main {padding:22px 18px 40px;}
+ .shared-review h1 {font-size:29px;}
+ .shared-criterion {font-size:17px;}
+ .shared-proof {padding:20px 0;}
+ .shared-clause blockquote {padding-left:12px;font-size:16px;}
+}
+
+.shared-decision {justify-self:start;}
+
+.delivery-inspect{display:block;margin:12px auto 0}.delivery-image-dialog{width:calc(100vw - 24px);height:calc(100dvh - 24px);max-width:none;max-height:none;box-sizing:border-box;padding:0;border:0;background:#202d29;color:#fff}.delivery-image-dialog[open]{display:flex;flex-direction:column}.delivery-image-dialog::backdrop{background:#21302acc}.delivery-image-tools{display:flex;gap:6px;align-items:center;padding:12px;flex-wrap:wrap;background:#161616;color:#d2d7d4}.delivery-image-tools button{min-width:44px;min-height:44px}.delivery-image-tools output{padding:0 8px}.delivery-image-tools button:last-child{margin-left:auto}.delivery-image-viewport{flex:1;min-height:0;overflow:auto;padding:12px;box-sizing:border-box;overscroll-behavior:contain}.delivery-image-viewport img{display:block;max-width:none;max-height:none;margin:auto}
+@media(max-width:500px){.shared-review main{padding-top:14px}.shared-project{margin-bottom:8px}.shared-review h1{margin:10px 0 8px}.shared-criterion{font-size:16px;margin:8px 0}.shared-amount{margin:8px 0}.shared-clause{margin:12px 0;padding:8px 0}.shared-proof{margin:12px 0;padding:14px}.shared-proof h2{font-size:18px}.shared-proof .file-compact{margin:10px 0;padding:10px 0}.shared-proof .shared-reference{margin:6px 0}.delivery-preview{margin-top:10px}.delivery-preview img{max-height:180px}.delivery-preview figcaption{display:none}.shared-proof textarea{min-height:64px}.shared-proof label{margin-top:10px}}
+
+@media(max-width:500px){.delivery-image-tools output{display:none}.delivery-image-tools{flex-wrap:nowrap;padding:10px;gap:5px}.delivery-image-tools button{padding-inline:10px}.shared-proof:has(.delivery-preview:not([hidden]))>p.shared-reference{display:none}.shared-proof textarea{height:64px}}
+
+/* Reopen the right retained agreement without losing the current workspace. */
+.shared-saved-agreements .shared-saved-count{font-size:12px;color:#9e9e9e;margin:8px 0 12px}
+.shared-saved-list{max-height:48vh;overflow:auto;overscroll-behavior:contain;padding-right:4px}
+.shared-saved-row{align-items:flex-start;border-top:1px solid #464544;padding:16px 0;margin:0;gap:20px}
+.shared-saved-info{min-width:0;flex:1}.shared-saved-title{display:block;font:600 19px/1.35 "Source Serif 4",Georgia,serif}
+.shared-saved-info p{margin:6px 0;overflow-wrap:anywhere}.shared-saved-parties{font-size:12px;color:#9e9e9e}
+.shared-saved-excerpt{font:14px/1.5 "Source Serif 4",Georgia,serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.shared-saved-info .shared-saved-meta{font-size:11px;line-height:1.5;color:#9e9e9e}.shared-saved-empty{padding:16px 0}
+@media(max-width:500px){.shared-saved-row{display:block;padding:14px 0}.shared-saved-row button{margin-top:8px;min-height:44px}.shared-saved-title{font-size:18px}.shared-saved-list{max-height:52vh}.shared-owner{padding:18px}}
+
+.shared-arrival-list{border:0;padding:0}.shared-arrival-list>summary[hidden]{display:none}.shared-owner:has(.shared-arrival-list){width:min(760px,calc(100vw - 24px))}.shared-agreements-open{white-space:nowrap}
+
+.delivery-pdf-page{display:block;margin:12px auto;max-width:100%;background:#161616;box-shadow:0 3px 18px #c7c7c718}.delivery-pdf-tools{display:flex;align-items:center;justify-content:space-between;gap:8px}.delivery-pdf-tools output{font-size:13px;white-space:nowrap}.delivery-pdf-dialog canvas{display:block;flex:none;background:#161616;margin:auto}.delivery-pdf-dialog .delivery-image-tools{flex-wrap:wrap}.delivery-pdf-dialog .delivery-image-tools output{white-space:nowrap}
+
+.delivery-pdf-dialog .delivery-image-tools output{display:inline}@media(max-width:500px){.delivery-pdf-page{max-height:180px;width:auto!important;height:auto!important}}
+
+.delivery-pdf-page-control{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-size:13px;margin:0}.delivery-pdf-page-control input{box-sizing:border-box;width:3.7em;min-width:0;padding:8px 5px;text-align:center;font:inherit;border:1px solid #3f434b;border-radius:6px;background:#161616;color:#c4c8d1}.delivery-pdf-page-control input:focus-visible{outline:2px solid #393e51;outline-offset:2px}
+
+@media(max-width:360px){.delivery-pdf-tools{flex-wrap:wrap}.delivery-pdf-tools .delivery-pdf-page-control{flex-basis:100%;justify-content:center;order:-1}}
+
+/* Selection layout adapted from bundled PDF.js 6.5.438 web/viewer.css (Apache-2.0). */
+.delivery-pdf-sheet{position:relative;margin:auto;background:#161616}.delivery-pdf-sheet canvas{margin:0}
+.delivery-pdf-text{position:absolute;inset:0;overflow:clip;line-height:1;letter-spacing:normal;word-spacing:normal;text-align:initial;text-size-adjust:none;-webkit-text-size-adjust:none;forced-color-adjust:none;transform-origin:0 0;caret-color:CanvasText;--scale-round-x:1px;--scale-round-y:1px;--min-font-size:1;--text-scale-factor:calc(var(--total-scale-factor)*var(--min-font-size));--min-font-size-inv:calc(1/var(--min-font-size))}
+.delivery-pdf-text :is(span,br){color:transparent;position:absolute;white-space:pre;cursor:text;transform-origin:0 0;user-select:text;-webkit-user-select:text}
+.delivery-pdf-text>:not(.markedContent),.delivery-pdf-text .markedContent span:not(.markedContent){z-index:1;--font-height:0;font-size:calc(var(--text-scale-factor)*var(--font-height));--scale-x:1;--rotate:0deg;transform:rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv))}
+.delivery-pdf-text .markedContent{display:contents}.delivery-pdf-text ::selection{background:#646d9155;color:transparent}.delivery-pdf-text br::selection{background:transparent}
+.delivery-pdf-text[data-main-rotation="90"]{transform:rotate(90deg) translateY(-100%)}.delivery-pdf-text[data-main-rotation="180"]{transform:rotate(180deg) translate(-100%,-100%)}.delivery-pdf-text[data-main-rotation="270"]{transform:rotate(270deg) translateX(-100%)}
+
+.delivery-pdf-find{display:flex;align-items:center;gap:6px;padding:8px 12px;background:#161616;color:#c4c8d1;border-top:1px solid #40434a;flex-wrap:wrap}.delivery-pdf-find input{flex:1;min-width:100px;max-width:420px;box-sizing:border-box;padding:10px;border:1px solid #3f434b;border-radius:6px;font:inherit}.delivery-pdf-find button{min-width:40px;min-height:42px;padding:8px 12px}.delivery-pdf-find output{font-size:13px;min-width:70px}.delivery-pdf-text .delivery-pdf-match{background:#4f421777;border-radius:2px}@media(max-width:500px){.delivery-pdf-find{padding:8px;gap:4px}.delivery-pdf-find input{width:100px}.delivery-pdf-find button{padding:8px}.delivery-pdf-find output{flex-basis:100%;min-height:16px}}
+
+/* Read the original context without leaving an unfinished invited decision. */
+body.shared-review .shared-source-open {margin:0 0 16px;color:#3156d9;}
+body.shared-review .shared-source-dialog {width:min(960px,calc(100vw - 32px));max-width:none;height:calc(100dvh - 48px);max-height:none;padding:0;overflow:auto;box-sizing:border-box;background:#191c24;}
+body.shared-review .shared-source-dialog[open] {display:flex;flex-direction:column;overflow:hidden;}
+.shared-source-toolbar {flex-shrink:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:16px 20px;background:#1b2232;color:#fff;}
+body.shared-review .shared-source-toolbar h2 {margin:0;color:#fff;font:800 19px/1.3 "Manrope",sans-serif;}
+.shared-source-toolbar .actions {display:flex;flex-wrap:wrap;gap:8px;margin:0;}
+body.shared-review .shared-source-toolbar button {font-size:12px;padding:8px 12px;}
+.shared-source-body {flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:22px;}
+body.shared-review .shared-source-body .contract-document {min-height:0;padding:26px 30px 40px;}
+body.shared-review .shared-source-body .contract-citation {min-height:0;display:inline;border-radius:0;font:inherit;padding:1px 0;}
+@media(max-width:500px){
+ body.shared-review .shared-source-dialog {width:100vw;height:100dvh;max-height:100dvh;margin:0;border:0;border-radius:0;}
+ .shared-source-toolbar {padding:12px 14px;gap:8px;}
+ .shared-source-toolbar .actions {width:100%;}
+ .shared-source-toolbar .actions button {flex:1;padding:8px 6px;}
+ .shared-source-body {padding:12px;}
+ body.shared-review .shared-source-body .contract-document {padding:20px 16px 30px;}
+}
+
+body.shared-review .shared-source-body .contract-clause,body.shared-review .shared-source-body .contract-citation {white-space:normal;}
+body.shared-review .shared-source-body .contract-clause__number {display:none;}
+body.shared-review .shared-source-body .contract-clause {margin:0;}
+body.shared-review .shared-source-body .contract-clause.citation-page-furniture {white-space:normal;}
+body.shared-review .shared-source-body .contract-clause.citation-rate-rows {white-space:pre-line;}
+.shared-source-toolbar .shared-source-references {display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;width:100%;}
+.shared-source-reference-menu {width:100%;border:0;padding:0;}
+.shared-source-reference-menu > summary {width:fit-content;min-height:36px;box-sizing:border-box;padding:8px 0;color:#fff;font:700 12px/20px "Manrope",sans-serif;cursor:pointer;}
+.shared-source-reference-menu > summary:focus-visible {outline:2px solid #373d53;outline-offset:3px;}
+.shared-source-reference-list {max-height:min(40dvh,320px);overflow:auto;overscroll-behavior:contain;padding:4px 0;}
+.shared-source-reference-list .shared-source-enclosing {display:block;}
+.shared-source-toolbar .shared-source-references[hidden],.shared-source-enclosing:empty {display:none;}
+body.shared-review .shared-source-references button,.shared-source-enclosing button {padding:5px 0;min-height:44px;border:0;background:transparent;color:#fff;text-decoration:underline;text-underline-offset:4px;text-align:left;}
+.shared-source-toolbar .source-reference-note {color:#d2dcee;font-size:12px;line-height:1.6;}
+.shared-source-body .contract-reference-focus {background:#1b1e26;color:inherit;scroll-margin-block:20px;}
+.shared-source-body .contract-reference-focus:focus-visible {outline:2px solid #3b404e;outline-offset:3px;}
+
+body.shared-review .contract-source-file {scroll-margin-top:100px;}
+@media(max-width:600px){body.shared-review .contract-source-file {scroll-margin-top:125px;}}
+.delivery-preview audio{display:block;width:100%;min-width:0;margin:0 auto}
+
+.delivery-preview video{display:block;width:100%;max-height:60vh;object-fit:contain;background:#1b2232;border-radius:8px;}
+
+.citation-paragraph.citation-table-rows,.contract-clause.citation-table-rows,body.shared-review .shared-source-body .contract-clause.citation-table-rows { white-space:pre-line; }
+
+.citation-table-rows .citation-table-markup{font-size:0;line-height:0}.citation-table-rows .citation-table-cell{white-space:normal;padding-right:.8em}.citation-table-rows .citation-table-break{display:block;height:0;white-space:normal;border-bottom:1px solid #424448;margin:.3em 0}.citation-table-rows .citation-table-cell:empty{display:none}
+
+.citation-table-multiline:has(>.citation-table-cell){display:grid!important;grid-template-columns:minmax(7em,1fr) minmax(0,1.45fr);column-gap:1em;align-items:start}.citation-table-multiline>.citation-table-markup{display:none}.citation-table-multiline>.citation-table-cell{min-width:0;padding-right:0}.citation-table-multiline:has(>.citation-table-cell):not(:has(>.citation-table-cell~.citation-table-cell)){grid-template-columns:minmax(0,1fr)}
+.citation-cell-break{display:block;height:0;margin:.65rem 0;font-size:0;line-height:0}
+
+/* Short term labels must not squeeze long definitions in narrow review cards. */
+.citation-excerpt { container-type:inline-size; }
+@container (max-width:440px) {
+  .citation-paragraph.citation-table-multiline:has(>.citation-table-cell) {
+    grid-template-columns:minmax(0,1fr); row-gap:.55em;
+  }
+}
+
+/* Open the context of this exact passage and return to its place in review. */
+body.shared-review .shared-passage-open {display:block;margin:3px 0 4px;padding:5px 0;min-height:44px;border:0;background:transparent;color:#8d96af;font-size:13px;text-decoration:underline;text-underline-offset:3px;text-align:left;}
+body.shared-review .shared-passage-open:focus-visible {outline:2px solid #3b404e;outline-offset:3px;}
+body.shared-review .shared-source-passage {width:auto;min-width:130px;min-height:44px;margin:0;padding:8px 10px;border:1px solid #3e424b;border-radius:6px;background:#1b1f26;color:#c4c8d1;font:700 12px/1.4 "Manrope",sans-serif;}
+body.shared-review .shared-source-body .contract-citation {scroll-margin-top:130px;}
+@media(max-width:500px){.shared-source-toolbar .actions {align-items:stretch}.shared-source-toolbar .actions button,.shared-source-toolbar .actions select {flex:1;min-width:0;}.shared-source-toolbar .actions select {flex-basis:125px;}}
+
+.shared-saved-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start;justify-content:flex-end;max-width:220px}.shared-saved-actions button{min-height:44px}.shared-saved-actions button+button{background:transparent;color:#8d96af;border:1px solid #3e424b}@media(max-width:500px){.shared-saved-actions{justify-content:flex-start;max-width:none}.shared-saved-actions button{margin-top:8px}}
+
+/* Reach exact source passages before a long completion criterion. */
+.shared-source-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}.shared-source-actions button{flex:0 1 auto;font-size:13px;padding:8px 12px;min-width:0}body.shared-review .shared-source-actions .shared-source-open{margin:0}.shared-criterion-return{margin:12px 0 0}.shared-clause{scroll-margin-top:16px}
+
+@media(max-width:500px){.shared-source-actions button{flex:1 1 150px}}

@@ -1,0 +1,6 @@
+/* Finish shared by light and dark mode. */
+#theme-toggle{border-radius:50%!important}
+html[data-theme=dark] input:not([type=checkbox]):not([type=radio]):not([type=file]),html[data-theme=dark] textarea,html[data-theme=dark] select{background:#1b1e24;color:#e7e9ee;border-color:#3a3f49}
+html[data-theme=dark] input::placeholder,html[data-theme=dark] textarea::placeholder{color:#8b919c}
+html[data-theme=dark] dialog{background:#16181d;color:#e7e9ee}
+html[data-theme=dark] ::selection{background:#3b5fd0;color:#fff}

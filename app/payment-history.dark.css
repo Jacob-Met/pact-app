@@ -1,0 +1,16 @@
+.payment-history { margin-top:1.25rem; padding-top:1rem; border-top:2px solid var(--ink); }
+.payment-history h4 { margin:0 0 .4rem; font-size:1rem; }
+.payment-history-note { color:var(--muted); font-size:.85rem; line-height:1.5; }
+.payment-history > ol { margin:.7rem 0 0; padding:0; list-style:none; }
+.payment-history-entry { padding:1rem 0; border-top:1px solid var(--line); }
+.payment-history-entry strong { display:block; font-variant-numeric:tabular-nums; }
+.payment-history-entry p { margin:.4rem 0; overflow-wrap:anywhere; }
+.payment-history-entry button { margin:.35rem 0; text-align:left; }
+.payment-history-reference { margin:.6rem 0; font-size:.75rem; white-space:pre-wrap; overflow-wrap:anywhere; font-family:ui-monospace,monospace; }
+.payment-history-entry p:empty { display:none; }
+@media (max-width:520px) { .payment-history button { width:100%; } }
+
+.payment-history-current { font-weight: 650; margin: .5rem 0; }
+.payment-history details { margin-top: .75rem; }
+.payment-history summary { cursor: pointer; color: var(--muted); font-size: .85rem; }
+.payment-history-entry > p { margin: .45rem 0; }

@@ -1,0 +1,12 @@
+
+.network-find { display:grid; grid-template-columns:minmax(180px,1fr) minmax(130px,.4fr) minmax(165px,.55fr) auto; gap:.6rem; align-items:end; padding:.7rem 1rem; border-bottom:1px solid var(--line); background:#161616; }
+.network-find label { display:grid; gap:.25rem; font-size:.76rem; font-weight:600; min-width:0; }
+.network-find input,.network-find select { width:100%; min-width:0; font:inherit; padding:.5rem; }
+.network-find button { font-size:.76rem; padding:.5rem .7rem; }
+.network-find__count { grid-column:1/-1; margin:0; color:var(--muted); font-size:.74rem; }
+.network-entry__match { display:block; font-size:.73rem; font-weight:400; color:#a8b6bd; margin-top:.3rem; overflow-wrap:anywhere; }
+@media(max-width:520px) { .network-find { grid-template-columns:minmax(0,1fr) auto; padding:.65rem .7rem; } .network-find > label:first-child { grid-column:1 / 2; } .network-find input,.network-find select { font-size:16px; } .network-find--expanded .network-filter-options { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); } .network-filter-toggle { max-width:150px; white-space:normal; } }
+.network-entry__deadline { display:block; margin-top:.35rem; font-size:.74rem; font-weight:500; color:var(--muted); }
+.network-entry__deadline[data-deadline="overdue"],.network-entry__deadline[data-deadline="due"],.network-entry__deadline[data-deadline="accepted-late"] { color:#efa681; font-weight:650; }
+@media(max-width:900px) and (min-width:521px) { .network-find { grid-template-columns:minmax(0,1fr) minmax(0,1fr); } }
+

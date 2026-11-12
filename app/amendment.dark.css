@@ -1,0 +1,168 @@
+.amendment-dialog{width:min(1080px,calc(100vw - 32px));max-width:none;max-height:92vh;padding:0;border:1px solid #444645;border-radius:2px;color:#ced5d4;background:#161616}
+.amendment-dialog::backdrop{background:#1b32319c}
+.amendment-header{padding:22px 26px 16px;border-bottom:1px solid #444645;background:#182018}
+.amendment-heading-row{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.amendment-heading-row h2{font:700 24px/1.2 system-ui,sans-serif;margin:0;letter-spacing:-.5px}
+.amendment-context{margin:9px 0 0;font-size:14px;line-height:1.45;color:#9ca19f}
+.amendment-close{font-size:14px;padding:5px 10px;background:transparent;flex:none}
+.amendment-body{padding:22px 26px 26px}
+.amendment-impact{padding:16px 26px;border-bottom:1px solid #444645;background:#1c2920;font-size:14px;line-height:1.45}
+.amendment-impact:empty{display:none}
+.amendment-impact-total{font-size:19px;font-variant-numeric:tabular-nums;line-height:1.35;display:block}
+.amendment-impact p{margin:8px 0}
+.amendment-impact-list{margin:8px 0 0;padding-left:20px}
+.amendment-impact-list li+li{margin-top:4px}
+.amendment-comparison{table-layout:fixed;width:100%;border-collapse:collapse;text-align:left;font-size:14px}
+.amendment-comparison caption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.amendment-comparison thead th{padding:10px 12px;border-bottom:2px solid #444645;font-size:13px;vertical-align:bottom}
+.amendment-comparison thead th:first-child{width:18%}
+.amendment-comparison tbody th{padding:16px 12px;font-size:13px;font-weight:600;vertical-align:top}
+.amendment-comparison td{padding:14px 12px;border-bottom:1px solid #434644;vertical-align:top;overflow-wrap:anywhere;white-space:pre-wrap;line-height:1.5}
+.amendment-before{color:#9da19f}
+.amendment-after{border-left:1px solid #434644}
+.amendment-changed .amendment-after{background:#4f3f17;box-shadow:inset 3px 0 #c69239}
+.amendment-dialog input,.amendment-dialog select,.amendment-dialog textarea{max-width:100%;font:inherit;border-radius:2px;box-sizing:border-box}
+.amendment-comparison input:not([type=checkbox]),.amendment-comparison select,.amendment-comparison textarea{width:100%}
+.amendment-comparison textarea{resize:vertical;min-height:80px}
+#amendment-criterion{field-sizing:content;min-height:6rem;max-height:min(26rem,65vh)}
+.amendment-dependencies{display:grid;gap:8px;white-space:normal}
+.amendment-dependencies .amendment-field{margin:0;flex-direction:row-reverse;justify-content:flex-end;align-items:flex-start;font-weight:400}
+.amendment-field{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:600;margin:18px 0}
+.amendment-field input[type=checkbox]{width:18px;height:18px;flex:none}
+.amendment-field:has(input[type=checkbox]){flex-direction:row-reverse;justify-content:flex-end;align-items:center;font-weight:400}
+.amendment-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;padding-top:16px;border-top:1px solid #434644}
+.amendment-actions button,.amendment-apply button{font-size:14px;padding:10px 14px;border-radius:2px}
+.amendment-local-note{font-size:13px;color:#9ca09f;line-height:1.45}
+.amendment-error{margin:16px 26px;padding:12px;background:#4f2a17;border-left:4px solid #bf6840;font-size:14px}
+.amendment-warning{font-size:14px;color:#e8b987}
+.amendment-reason-text{font-size:16px;line-height:1.5;border-left:3px solid #434645;padding-left:14px;margin-top:0}
+.amendment-reviews{margin-top:24px;border-top:1px solid #444645;padding-top:18px}
+.amendment-reviews h3,.amendment-apply h3{font-size:17px;margin:0 0 12px}
+.amendment-reviews ul{list-style:none;padding:0;margin:0}
+.amendment-reviews li{padding:10px 0;border-bottom:1px solid #434644;display:grid;grid-template-columns:minmax(130px,1fr) 2fr;gap:4px 18px;font-size:14px}
+.amendment-reviews li p{grid-column:2;margin:0;line-height:1.45}
+.amendment-reviews li span{color:#9ca19f}
+.amendment-apply{margin-top:22px;padding-top:18px;border-top:2px solid #424845;font-size:14px;line-height:1.5}
+.amendment-withdrawal,.amendment-history{margin-top:24px;font-size:14px}
+.amendment-withdrawal summary,.amendment-history summary,.amendment-source-picker summary{cursor:pointer;font-weight:600}
+.amendment-history ol{padding-left:20px}
+.amendment-history li{padding:8px 0}
+.amendment-history small{display:block;color:#9ca09f;margin-top:4px}
+.amendment-text-button{border:0;padding:3px 0;background:none;color:#95dac0;text-align:left;text-decoration:underline;text-underline-offset:3px}
+.amendment-source-picker{white-space:normal;font-size:13px;margin-top:10px}
+.amendment-source-picker textarea{margin:10px 0}
+.network-amendment-link{margin-top:16px}
+.evidence-historical{border-left:3px solid #444545;background:#1f221c}
+@media(max-width:650px){
+ .amendment-dialog{width:calc(100vw - 16px);max-height:96vh}
+ .amendment-header{padding:17px 16px 14px}
+ .amendment-heading-row h2{font-size:21px}
+ .amendment-body{padding:17px 16px 20px}
+ .amendment-impact{padding:14px 16px}
+ .amendment-impact-total{font-size:17px}
+ .amendment-comparison,.amendment-comparison tbody,.amendment-comparison tr,.amendment-comparison td,.amendment-comparison tbody th{display:block;width:100%;box-sizing:border-box}
+ .amendment-comparison thead{display:none}
+ .amendment-comparison tbody th{padding:16px 0 5px;border-top:1px solid #434645;font-size:14px}
+ .amendment-comparison td{padding:10px 12px;border-bottom:0}
+ .amendment-comparison td::before{content:attr(data-label);display:block;margin-bottom:5px;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+ .amendment-after{border-left:0;margin-bottom:14px}
+ .amendment-reviews li{grid-template-columns:1fr;gap:6px}
+ .amendment-reviews li p{grid-column:1}
+ .amendment-error{margin:14px 16px}
+}
+
+.amendment-unchanged,.amendment-review-history,.amendment-reconsider{margin:16px 0;font-size:14px}
+.amendment-unchanged summary,.amendment-review-history summary,.amendment-reconsider summary{cursor:pointer;font-weight:600;padding:9px 0}
+.amendment-review-summary{margin:18px 0 8px;font-size:14px;line-height:1.5;color:#acb4b1}
+.amendment-review-history .amendment-reviews{margin-top:8px}
+.amendment-reviews li details{grid-column:2;font-size:12px;color:#9ca09f}
+@media(max-width:650px){.amendment-reviews li details{grid-column:1}}
+
+.network-amendment-actions { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline; margin: .75rem 0; }
+
+/* Precise wording edits stay shared by organizer and invited review. */
+.amendment-wording-heading{display:flex;align-items:center;font-size:14px}
+.amendment-comparison-group .amendment-wording-heading{position:sticky;top:0;z-index:3;height:58px;box-sizing:border-box;gap:7px;padding:8px 0;background:#161616;border-top:2px solid #3c404e;border-bottom:1px solid #404349}
+.amendment-wording-count{font-size:12px;font-variant-numeric:tabular-nums;color:#9da19f}
+.amendment-wording-steps{display:flex;gap:6px;margin-left:auto}
+.amendment-wording-heading .amendment-wording-step{width:auto;min-height:40px;padding:7px 10px;border:1px solid #414449;background:#161616;color:#8e98b1;font-family:inherit;font-size:12px;font-weight:600;line-height:1.2;cursor:pointer}
+.amendment-wording-step:disabled{opacity:.45;cursor:default}
+.amendment-wording-nav{margin:0 0 22px;padding:0 0 16px;border-bottom:1px solid #414449;white-space:normal}
+.amendment-wording-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0 24px;max-height:18rem;overflow:auto;list-style:none;padding:0;margin:10px 0 0}
+.amendment-wording-jump{display:block;width:100%;min-height:48px;padding:10px 4px;border:0;border-top:1px solid #414448;border-radius:0;background:transparent;color:inherit;text-align:left;font:inherit;line-height:1.5;cursor:pointer}
+.amendment-wording-jump:hover,.amendment-wording-jump[data-active]{background:#181b22}
+.amendment-wording-jump:focus-visible{outline:2px solid #3b414e;outline-offset:-2px}
+.amendment-wording-field{display:block;font-size:12px;font-weight:600;color:#9da19f;margin-bottom:4px}
+.amendment-wording-snippet{display:block;font-size:14px;overflow-wrap:anywhere}
+.amendment-wording-arrow{padding:0 .2em;color:#9da19f}
+.amendment-word-before{color:#e38c8f;background:#4a1c22;text-decoration:line-through;text-decoration-thickness:1px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.amendment-word-after{color:#8e98b1;background:#1a1d25;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.amendment-comparison .amendment-worded .amendment-after{background:transparent;box-shadow:none}
+.amendment-word-focus{outline:2px solid #3b414e;outline-offset:3px}
+@media(max-width:650px){
+ .amendment-wording-nav{margin-bottom:14px}
+ .amendment-wording-list{display:block;max-height:17rem}
+ .amendment-comparison .amendment-worded td::before{position:sticky;top:58px;z-index:1;background:#161616;padding:8px 0;border-bottom:1px solid #414449}
+}
+
+/* Source excerpts remain separate in every commitment comparison. */
+.citation-excerpts{white-space:normal}
+.citation-excerpt{min-width:0;margin:0}
+.citation-location{display:block;margin:0 0 7px;font-size:11px;line-height:1.5;color:#9da19f;overflow-wrap:anywhere}
+.citation-excerpt blockquote{margin:0;border-left:2px solid #424448;padding:0 0 0 12px;white-space:normal;overflow-wrap:anywhere;font:inherit;line-height:1.65}
+.citation-gap{margin:8px 0;text-align:center;color:#9a9da2;font-size:17px;line-height:1}
+.citation-excerpt+.citation-excerpt{margin-top:18px}
+
+.amendment-citation-part+.amendment-citation-part{margin-top:20px;border-top:1px solid #404349;padding-top:16px}
+.amendment-citation-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;white-space:normal}
+.amendment-citation-heading .amendment-text-button{flex:none;font-size:11px;min-height:36px}
+.amendment-citation-quote{margin:0;border-left:2px solid #424448;padding-left:12px;font:inherit;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+.amendment-source-search-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.amendment-source-search-actions button{font-size:12px;min-height:40px}
+.amendment-source-found{margin:8px 0;font-size:12px;color:#9da19f}
+.amendment-source-found-quote{margin:10px 0;border-left:2px solid #424448;padding-left:12px;white-space:normal;line-height:1.6}
+.amendment-source-custom{margin-top:16px}
+
+.citation-paragraph{display:block;white-space:normal}.citation-break{display:block;height:.7em;line-height:0;white-space:normal}
+
+
+/* Match source excerpts across versions even when an earlier definition is added. */
+.amendment-comparison td.amendment-citation-comparison{padding:0;white-space:normal}
+.amendment-comparison td.amendment-citation-comparison::before{display:none}
+.amendment-citation-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.amendment-citation-pair+.amendment-citation-pair{border-top:1px solid #404349}
+.amendment-citation-version{min-width:0;padding:14px 12px}
+@media(max-width:650px){
+ .amendment-citation-pair{display:block}
+ .amendment-citation-version{padding:10px 12px}
+ .amendment-citation-version::before{content:attr(data-label);display:block;margin-bottom:7px;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+ .amendment-citation-empty{display:none}
+}
+
+
+@media(min-width:651px){
+ .amendment-has-wording .amendment-comparison thead th{position:sticky;top:58px;z-index:2;background:#161616}
+}
+@media(max-width:650px){
+ .amendment-citation-version::before{position:sticky;top:58px;z-index:1;background:#161616;padding:8px 0;border-bottom:1px solid #414449}
+}
+
+.citation-paragraph.citation-rate-rows { white-space:pre-line; }
+
+.citation-page-furniture { display:block; white-space:normal; font:12px/1.4 Arial,sans-serif; color:#9b9da2; border-block:1px solid #424448; padding:4px 0; margin:6px 0; }
+.citation-page-watermark{display:block;white-space:normal;text-align:right;font:10px/1.4 Arial,sans-serif;color:#9b9da2;border-bottom:1px solid #424448;margin:3px 0}
+
+.citation-paragraph.citation-table-rows,.contract-clause.citation-table-rows,body.shared-review .shared-source-body .contract-clause.citation-table-rows { white-space:pre-line; }
+
+.citation-table-rows .citation-table-markup{font-size:0;line-height:0}.citation-table-rows .citation-table-cell{white-space:normal;padding-right:.8em}.citation-table-rows .citation-table-break{display:block;height:0;white-space:normal;border-bottom:1px solid #424448;margin:.3em 0}.citation-table-rows .citation-table-cell:empty{display:none}
+
+.citation-table-multiline:has(>.citation-table-cell){display:grid!important;grid-template-columns:minmax(7em,1fr) minmax(0,1.45fr);column-gap:1em;align-items:start}.citation-table-multiline>.citation-table-markup{display:none}.citation-table-multiline>.citation-table-cell{min-width:0;padding-right:0}.citation-table-multiline:has(>.citation-table-cell):not(:has(>.citation-table-cell~.citation-table-cell)){grid-template-columns:minmax(0,1fr)}
+.citation-cell-break{display:block;height:0;margin:.65rem 0;font-size:0;line-height:0}
+
+/* Short term labels must not squeeze long definitions in narrow review cards. */
+.citation-excerpt { container-type:inline-size; }
+@container (max-width:440px) {
+  .citation-paragraph.citation-table-multiline:has(>.citation-table-cell) {
+    grid-template-columns:minmax(0,1fr); row-gap:.55em;
+  }
+}
